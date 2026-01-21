@@ -211,31 +211,13 @@ Day 7: ░░░░░░░░░░░░░░░░ 0%
 
 ---
 
-## 📁 Repository Structure  
+## 📁 Repository Structure
 data-analytics-portfolio/
-│
-├── 📜 01-certificates/ # All earned certificates
-│ ├── kaggle-intro-sql.png
-│ └── kaggle-advanced-sql.png
-│
-├── 💻 02-sql-practice/ # SQL problem-solving
-│ ├── leetcode/
-│ ├── stratascratch/
-│ └── hackerrank/
-│
-├── 🚀 03-projects/ # Portfolio projects
-│ ├── project-1-ecommerce-sql/
-│ ├── project-2-customer-segmentation/
-│ ├── project-3-sales-dashboard/
-│ └── project-4-churn-prediction/
-│
-├── 📖 04-learning-logs/ # Daily reflections
-│ ├── week-01/
-│ ├── week-02/
-│ └── ...
-│
-└── 📄 README.md # This file
-
+├── 01-certificates/ → All earned certificates (PNGs)
+├── 02-sql-practice/ → LeetCode, StrataScratch, HackerRank solutions
+├── 03-projects/ → Portfolio projects (SQL, Python, BI)
+├── 04-learning-logs/ → Daily reflections & progress notes
+└── README.md → This file
 
 ---
 
