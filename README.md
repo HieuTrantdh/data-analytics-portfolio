@@ -212,12 +212,12 @@ Day 7: ░░░░░░░░░░░░░░░░ 0%
 ---
 
 ## 📁 Repository Structure
-data-analytics-portfolio
-├── 01-certificates → All earned certificates (PNGs)
-├── 02-sql-practice → LeetCode, StrataScratch, HackerRank solutions
-├── 03-projects → Portfolio projects (SQL, Python, BI)
-├── 04-learning-logs → Daily reflections & progress notes
-└── README.md → This file
+data-analytics-portfolio/
+├── 📜 01-certificates/ # All earned certificates (PNGs)
+├── 💻 02-sql-practice/ # LeetCode, StrataScratch, HackerRank solutions
+├── 🚀 03-projects/ # Portfolio projects (SQL → Python → BI)
+├── 📖 04-learning-logs/ # Daily reflections & progress notes
+└── 📄 README.md # This file
 
 ---
 
