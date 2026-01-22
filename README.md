@@ -10,7 +10,7 @@ My Approach: Learn in public, build real projects, document everything, stay con
 ## 🎯 Current Mission  
 **Week 1 Focus (Now):**  
 - 🔍 Master advanced SQL (Window functions, CTEs, Analytics)  
-- 💼 Solve 50+ interview problems (LeetCode, StrataScratch)  
+- 💼 Solve 50+ interview problems (LeetCode, StrataScratch)   **15/50 completed ✅**
 - 📊 Build first portfolio project: E-commerce SQL Analytics  
 - 📈 Excel intermediate skills  
 
@@ -26,7 +26,7 @@ My Approach: Learn in public, build real projects, document everything, stay con
 - Kaggle: Advanced SQL (Nov 2025) - [View]([#](https://www.kaggle.com/learn/certification/kydiotsann71/advanced-sql))  
 
 🔄 **In Progress:**  
-- LeetCode SQL 50 Badge (0/50 problems)  
+- LeetCode SQL 50 Badge (15/50 problems - 30% complete) 🔥 
 
 📅 **Planned:**  
 - Kaggle: Python, Pandas, Data Visualization, Data Cleaning  
@@ -153,7 +153,7 @@ My Approach: Learn in public, build real projects, document everything, stay con
 
 **Week 1 (Current Week):**  
 - Day 1: Setup GitHub portfolio ✅  
-- Day 2: LeetCode SQL (15 problems) + Analytical patterns  
+- Day 2: LeetCode SQL (15 problems) + Analytical patterns ✅   
 - Day 3: Excel intermediate (PivotTables, Power Query)  
 - Day 4: Excel advanced + Data cleaning  
 - Day 5-7: SQL project - E-commerce Analytics  
@@ -187,16 +187,16 @@ My Approach: Learn in public, build real projects, document everything, stay con
 ## 📊 Progress Tracking  
 
 ### Overall Progress  
-Week 1: ██░░░░░░░░░░░░░░ 10% (SQL Practice)
+Week 1: ████░░░░░░░░░░░░ 25% (SQL Practice) ⬅️ YOU ARE HERE
 Week 2: ░░░░░░░░░░░░░░░░ 0%
 Week 3: ░░░░░░░░░░░░░░░░ 0%
 ...
 Week 16: ░░░░░░░░░░░░░░░░ 0%
-**Total:** 1/16 weeks completed (0.6%)  
+**Total:** Week 1 - 25% completed (2/7 days) 
 
 ### Current Week Status (Week 1)  
 Day 1: ████████████████ 100% ✅ Portfolio Setup
-Day 2: ░░░░░░░░░░░░░░░░ 0%
+Day 2: ████████████████ 100% ✅ LeetCode SQL (15 problems)
 Day 3: ░░░░░░░░░░░░░░░░ 0%
 Day 4: ░░░░░░░░░░░░░░░░ 0%
 Day 5: ░░░░░░░░░░░░░░░░ 0%
@@ -205,7 +205,7 @@ Day 7: ░░░░░░░░░░░░░░░░ 0%
 
 
 **Daily Streak**  
-🔥 Current Streak: 1 day  
+🔥 Current Streak: 2 days 🔥🔥
 🎯 Goal: 112 consecutive days (16 weeks)  
 💪 Commitment: Work every single day  
 
@@ -247,7 +247,7 @@ data-analytics-portfolio/
 - Week 1 Progress: [Will update daily]  
 
 **Problem Solving**  
-- LeetCode: 0/50 problems  
+- LeetCode: 15/50 problems (30% complete) 🔥  
 - StrataScratch: 0 problems  
 - HackerRank: ~15 problems (previous work)  
 
@@ -283,17 +283,24 @@ I'm actively seeking:
 
 ## 📝 Daily Updates  
 **Latest Activity**  
-**January 21, 2026** - Day 1, Week 1  
-- ✅ Created professional GitHub portfolio  
-- ✅ Uploaded 2 Kaggle SQL certificates  
-- ✅ Established folder structure  
-- ✅ Defined 16-week roadmap  
-- ✅ Set up tracking systems  
 
-**Next Up (Tomorrow):**  
-- 15 LeetCode SQL problems  
-- Learn analytical SQL patterns  
-- Document learnings  
+**January 22, 2026** - Day 2, Week 1  
+- ✅ Solved 15 LeetCode SQL problems (6 Easy, 9 Medium)
+- ✅ Mastered JOIN patterns (INNER, LEFT, SELF, CROSS)
+- ✅ Learned advanced patterns (CASE WHEN, HAVING, COALESCE)
+- ✅ Documented all solutions in `/02-sql-practice/leetcode/`
+- ✅ Created comprehensive daily learning log
+- ✅ Published LinkedIn post with insights
+
+**Progress:**
+- 📊 LeetCode SQL 50: 15/50 (30%)
+- 🔥 Streak: 2 days
+- ⏱️ Time invested today: 3.5 hours
+
+**Next Up (Day 3):**  
+- 15 more LeetCode SQL problems (Window Functions intro)
+- Excel intermediate: PivotTables, VLOOKUP, Power Query
+- Start reviewing dataset for Week 1 project
 
 ---
 
@@ -319,8 +326,6 @@ If you're on a similar journey or find this helpful:
 
 Built with 💙 and dedication  
 
-**Last Updated: January 21, 2026**  
+**Last Updated: January 22, 2026**  
 
-GitHub followers  
-
-**Day 1 of 112 | Let's build something great together! 🚀**
+**Day 2 of 112** | 🔥 Streak: 2 days | **Let's build something great together! 🚀**
