@@ -187,17 +187,16 @@ My Approach: Learn in public, build real projects, document everything, stay con
 ## 📊 Progress Tracking  
 
 ### Overall Progress  
-Week 1: ████░░░░░░░░░░░░ 25% (SQL Practice) ⬅️ YOU ARE HERE
+Week 1: ████████░░░░░░░░ 43% (SQL + Excel Practice) ⬅️ YOU ARE HERE
 Week 2: ░░░░░░░░░░░░░░░░ 0%
 Week 3: ░░░░░░░░░░░░░░░░ 0%
 ...
 Week 16: ░░░░░░░░░░░░░░░░ 0%
-**Total:** Week 1 - 25% completed (2/7 days) 
 
 ### Current Week Status (Week 1)  
 Day 1: ████████████████ 100% ✅ Portfolio Setup
 Day 2: ████████████████ 100% ✅ LeetCode SQL (15 problems)
-Day 3: ░░░░░░░░░░░░░░░░ 0%
+Day 3: ████████████████ 100% ✅ Excel Intermediate + More SQL
 Day 4: ░░░░░░░░░░░░░░░░ 0%
 Day 5: ░░░░░░░░░░░░░░░░ 0%
 Day 6: ░░░░░░░░░░░░░░░░ 0%
@@ -205,7 +204,7 @@ Day 7: ░░░░░░░░░░░░░░░░ 0%
 
 
 **Daily Streak**  
-🔥 Current Streak: 2 days 🔥🔥
+🔥 Current Streak: 3 days 🔥🔥
 🎯 Goal: 112 consecutive days (16 weeks)  
 💪 Commitment: Work every single day  
 
@@ -284,23 +283,23 @@ I'm actively seeking:
 ## 📝 Daily Updates  
 **Latest Activity**  
 
-**January 22, 2026** - Day 2, Week 1  
-- ✅ Solved 15 LeetCode SQL problems (6 Easy, 9 Medium)
-- ✅ Mastered JOIN patterns (INNER, LEFT, SELF, CROSS)
-- ✅ Learned advanced patterns (CASE WHEN, HAVING, COALESCE)
-- ✅ Documented all solutions in `/02-sql-practice/leetcode/`
-- ✅ Created comprehensive daily learning log
-- ✅ Published LinkedIn post with insights
+January 23, 2026 - Day 3, Week 1
+✅ Completed Excel intermediate training (PivotTables, VLOOKUP, Power Query)
+✅ Solved 10 more LeetCode SQL problems (Total: 25/50 - 50%)
+✅ Practiced Window Functions: ROW_NUMBER(), RANK(), DENSE_RANK()
+✅ Built first Excel dashboard with sample data
+✅ Updated Excel skill level: 15% → 35%
 
 **Progress:**
-- 📊 LeetCode SQL 50: 15/50 (30%)
-- 🔥 Streak: 2 days
-- ⏱️ Time invested today: 3.5 hours
+- 📊 LeetCode SQL 50: 2  5/50 (30%)
+- 🔥 Streak: 3 days
+- ⏱️ Time invested today: 4 hours
 
-**Next Up (Day 3):**  
-- 15 more LeetCode SQL problems (Window Functions intro)
-- Excel intermediate: PivotTables, VLOOKUP, Power Query
-- Start reviewing dataset for Week 1 project
+Next Up (Day 4):
+- Excel advanced functions (INDEX-MATCH, Array Formulas)
+- Data cleaning techniques in Excel
+- 10 more SQL problems (CTEs focus)
+- Start planning E-commerce dataset
 
 ---
 
