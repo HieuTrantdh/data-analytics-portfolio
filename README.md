@@ -322,39 +322,14 @@ Year 2 student on a focused journey to master data analytics through practical p
 
 Open to feedback, mentorship, and internship opportunities.
 
-**LinkedIn:** [linkedin.com/in/yourprofile]  
-**Email:** your.email@example.com  
-**Kaggle:** [kaggle.com/yourprofile]  
+**LinkedIn:** [https://www.linkedin.com/in/hieutran-analytics/]  
+**Email:** tranhieu71tdh@gmail.com 
+**Kaggle:** [https://www.kaggle.com/kydiotsann71  
 **GitHub:** You're already here - star this repo to follow my journey
 
----
-
-## Daily Updates
-
-**2026-01-24 | Day 4 | Week 1**
-- Excel advanced: INDEX-MATCH, Array Formulas, Data Cleaning
-- 10 SQL problems focusing on CTEs
-- E-commerce project: Planning document completed, dataset downloaded
-- Learning: CTEs make complex queries more readable than nested subqueries
-
-**2026-01-23 | Day 3**
-- Excel intermediate: PivotTables, VLOOKUP, Power Query
-- 10 SQL problems: Window Functions (ROW_NUMBER, RANK, DENSE_RANK)
-- Built first Excel dashboard with sample sales data
-- Excel skill: 35% → 50%
-
-**2026-01-22 | Day 2**
-- 15 LeetCode SQL problems completed
-- Analytical patterns: Cohort analysis, Funnel queries
-- Set up SQL practice documentation
-
-**2026-01-21 | Day 1**
-- GitHub portfolio setup
-- Repository structure created
-- Learning roadmap finalized
 
 ---
 
-**Last Updated:** January 24, 2026 | Day 4 of 112
+**Last Updated:** January 27, 2026 | Day 4 of 112
 
 *"Consistency beats intensity. Building something meaningful, one day at a time."*
