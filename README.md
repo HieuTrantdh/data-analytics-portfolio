@@ -280,7 +280,7 @@ Year 2 student on a focused journey to master data analytics through practical p
 
 **Completed:**
 - Kaggle: Introduction to SQL (Nov 2025)
-- Kaggle: Advanced SQL (Nov 2025)
+- Kaggle: Advanced SQL (Jan 2026)
 
 **In Progress:**
 - LeetCode SQL 50 Badge (70% complete)
