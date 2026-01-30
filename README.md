@@ -217,30 +217,6 @@ Year 2 student on a focused journey to master data analytics through practical p
 
 ---
 
-## What Makes This Portfolio Different
-
-**Real Business Focus**
-- Every project answers specific business questions
-- Emphasis on ROI and actionable insights
-- Projects mirror actual work scenarios
-
-**Full Transparency**
-- Complete code with comments explaining reasoning
-- Documentation includes what didn't work and why
-- Learning process visible, not just final results
-
-**Scalable & Production-Ready**
-- Queries optimized for large datasets (100K+ rows)
-- Reusable code with clear structure
-- Professional documentation standards
-
-**Self-Directed Learning**
-- Project 5 entirely self-initiated
-- Daily problem-solving practice
-- Continuous improvement mindset
-
----
-
 ## Learning Roadmap
 
 **Phase 1: SQL & Excel** (Week 1-2) - Current
