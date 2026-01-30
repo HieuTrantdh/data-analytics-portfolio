@@ -60,135 +60,160 @@ Year 2 student on a focused journey to master data analytics through practical p
 
 ## Portfolio Projects
 
-> **Project Philosophy:** Each project solves real business problems with clear ROI. No toy datasets or tutorial follow-alongs.
-
-### 1. E-Commerce Sales Analysis
-**Week 1-2 | SQL | In Progress**
-
-**Business Problem:** E-commerce company needs to identify revenue opportunities and improve customer retention.
-
-**Dataset:** 100K real orders from Brazilian E-Commerce (Olist)
-
-**Key Analyses:**
-- Revenue trends and performance by region
-- Customer segmentation and behavior patterns
-- Product performance and ratings impact
-- Payment patterns and operational efficiency
-
-**Business Impact:**
-- Identify top 20% customers driving 80% revenue
-- Recommend product bundles based on purchase patterns
-- Optimize delivery times by region
-- Reduce late delivery rate through operational insights
-
-**Deliverables:** 5-8 documented SQL queries, executive summary, actionable recommendations
-
-**Dataset:** [Kaggle - Olist E-Commerce](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
-
-[View Project →](./03-projects/01-ecommerce-sql-analysis)
+> **Project Philosophy:** Quality over quantity. Three comprehensive projects demonstrating end-to-end data analytics skills - from data collection to business recommendations.
 
 ---
 
-### 2. Customer Behavior Analysis
-**Week 5-6 | Python | Planned**
+### 📊 Project 1: E-Commerce Analytics Platform
+**Week 2-4 | SQL + Python + Tableau | In Progress**
 
-**Business Problem:** Retail company struggles with customer retention and needs targeted marketing strategies.
+**Business Challenge:** E-commerce company needs actionable insights to increase revenue and improve customer retention in a competitive market.
 
-**Dataset:** 500K retail transactions (UK Online Retail - UCI)
+**Dataset:** 100,000 real orders from Brazilian E-Commerce (Olist) | 8 relational tables
 
-**Approach:**
-- RFM segmentation to identify customer tiers
-- Calculate customer lifetime value
-- Cohort analysis for retention patterns
-- Product affinity analysis for cross-selling
+**Comprehensive Analysis (3-Week Deep Dive):**
 
-**Expected Business Value:**
-- Segment customers into 4-5 actionable groups
-- Personalized marketing strategies per segment
-- Identify at-risk customers before they churn
-- Recommend product bundles to increase AOV by 15-20%
+**Week 2 - SQL Mastery:**
+- Revenue intelligence: Daily/weekly/monthly trends with growth rates
+- Customer segmentation using RFM methodology in pure SQL
+- Product performance: ABC analysis (80/20 rule)
+- Geographic insights: Sales patterns by state/city
+- Operational metrics: Delivery performance and review correlation
 
-**Tech:** SQL, Python (pandas, matplotlib, seaborn), Jupyter Notebook
+**SQL Techniques Demonstrated:**
+- Complex multi-table JOINs (4-5 tables)
+- Advanced Window Functions (RANK, LAG, LEAD, running totals)
+- CTEs and subqueries for complex logic
+- Date functions and aggregations
+- CASE WHEN for business rules
 
-**Dataset:** [Kaggle - Online Retail UCI](https://www.kaggle.com/datasets/lakshmi25npathi/online-retail-dataset)
+**Week 3 - Python Analytics:**
+- Statistical analysis (correlation, distributions, outliers)
+- 8-10 professional visualizations (trends, heatmaps, scatter plots)
+- Cohort retention matrix
+- Basic predictive insights (linear regression for forecasting)
 
-[View Project →](./03-projects/02-customer-behavior-python)
-
----
-
-### 3. Sales Dashboard
-**Week 7 | Tableau/Power BI | Planned**
-
-**Business Problem:** Executive team needs real-time sales visibility without SQL knowledge.
-
-**Solution:** Interactive dashboard with KPIs, trends, and drill-down capabilities
-
-**Features:**
-- Executive view: Revenue, Orders, AOV, YoY/MoM growth
-- Performance analysis: Monthly trends, top products, geographic heat map
-- Interactive filters: Date range, category, location
-
-**Business Value:**
-- Reduce reporting time from 4 hours to 5 minutes
-- Enable data-driven decisions in real-time
-- Identify underperforming regions immediately
-
-**Tech:** Tableau Public (shareable link), SQL for data prep
-
-[View Project →](./03-projects/03-sales-dashboard)
-
----
-
-### 4. Sales Forecasting
-**Week 9-10 | Python + ML | Planned**
-
-**Business Problem:** Retail chain needs accurate sales forecasts to optimize inventory and staffing.
-
-**Dataset:** Real grocery store sales data (Corporación Favorita)
-
-**Approach:**
-- Time series analysis with seasonality detection
-- Feature engineering: holidays, promotions, day-of-week patterns
-- Model comparison: Linear Regression baseline vs Random Forest
-- Error analysis and business recommendations
+**Week 4 - Business Deliverables:**
+- Interactive Tableau dashboard (published publicly)
+- Executive report (PDF, 3-5 pages) with strategic recommendations
+- Complete GitHub documentation with reproducible code
 
 **Expected Business Impact:**
-- Reduce inventory waste by 10-15% through better forecasting
-- Optimize staff scheduling based on predicted demand
-- Identify high-impact promotional periods
+- Identify top 20% customers driving 80% revenue
+- Optimize delivery operations to reduce late deliveries by 15%
+- Product bundling recommendations to increase AOV
+- Geographic expansion opportunities based on untapped markets
 
-**Tech:** Python (pandas, scikit-learn), Jupyter Notebook
+**Skills Showcased:** Advanced SQL, Python (pandas, matplotlib, seaborn, scipy), Tableau, Business Analysis, Technical Documentation
 
-**Dataset:** [Kaggle - Store Sales Forecasting](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)
+**Dataset:** [Brazilian E-Commerce - Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
 
-[View Project →](./03-projects/04-sales-forecasting)
+📁 [View Project Details →](./03-projects/01-ecommerce-analytics-platform)
 
 ---
 
-### 5. Vietnam DA Job Market Analysis
-**Week 11-12 | Web Scraping + Analysis | Planned**
+### 🌟 Project 2: Vietnam Tech News Intelligence
+**Week 6-8 | Web Scraping + NLP + Analysis | Planned**
 
-**Research Problem:** Aspiring data analysts lack clear guidance on skills to prioritize and realistic salary expectations.
+**Research Question:** What are the hottest trends in Vietnam's tech ecosystem? Which technologies and topics dominate the news cycle?
 
-**Unique Value:** Self-initiated project demonstrating ability to gather and analyze original data.
+**Why This Project Stands Out:**
+- ✅ **Original data collection** - Web scraping, not pre-made datasets
+- ✅ **Shows initiative** - Self-directed research project
+- ✅ **Vietnam-specific** - Unique insights unavailable elsewhere
+- ✅ **Current & relevant** - Real-time tech landscape analysis
 
-**Research Questions:**
-- What skills appear in 90%+ of job postings?
-- What's the realistic salary range for junior DAs in Vietnam?
-- Which companies are actively hiring?
-- How does Hanoi market compare to HCMC?
+**Data Collection Strategy:**
+- **Primary sources:** VnExpress Tech, Genk.vn (RSS feeds - 200-300 articles)
+- **Secondary:** TechInAsia Vietnam (web scraping if feasible)
+- **Time period:** Recent 6-12 months of tech coverage
 
-**Methodology:**
-- Scrape 500+ job postings (VietnamWorks, TopCV, LinkedIn)
-- Text analysis for skill frequency
-- Salary analysis by experience level
-- Trend analysis over time
+**Analysis Framework:**
 
-**Deliverable:** Public report helping other students prepare for DA careers
+**Week 6 - Data Collection:**
+- Build RSS feed scraper (Python: feedparser, requests)
+- Implement web scraper for dynamic content (BeautifulSoup/Selenium)
+- Data cleaning: text normalization, duplicate removal
+- Dataset: 300-400 tech news articles
 
-**Tech:** Python (BeautifulSoup/Scrapy, pandas), Data visualization
+**Week 7 - Text Analytics:**
+- **Topic modeling:** Most discussed topics (AI, blockchain, startups, funding)
+- **Trend analysis:** Topic popularity over time
+- **Keyword extraction:** Top companies, technologies, people mentioned
+- **Sentiment analysis:** Positive/negative/neutral distribution using TextBlob
+- **Temporal patterns:** Publishing frequency and hot news periods
 
-[View Project →](./03-projects/05-job-market-scraping)
+**Week 8 - Insights & Deliverables:**
+- Interactive Tableau dashboard: Topic trends, word clouds, sentiment gauges
+- Research report: "Vietnam Tech Landscape 2026: Data-Driven Insights"
+- Blog post: "I Analyzed 300+ Vietnam Tech Articles: Here's What's Hot"
+- **Public dataset release** on Kaggle - first Vietnamese tech news dataset
+
+**Research Findings (Expected):**
+- Top 10 most covered tech topics in Vietnam
+- Which companies/startups get most media attention
+- Sentiment trends (positive vs critical coverage)
+- Emerging technologies gaining traction
+- Content gaps and underreported topics
+
+**Skills Showcased:** Web Scraping, NLP (Natural Language Processing), Text Analytics, Data Cleaning (messy real-world data), Python (Beautiful Soup, pandas, TextBlob), Data Visualization
+
+**Unique Value:** Demonstrates ability to gather original data and conduct independent research - a key differentiator from candidates who only use pre-cleaned datasets.
+
+📁 [View Project Details →](./03-projects/02-vietnam-tech-news-intelligence)
+
+---
+
+### 🤖 Project 3: Sales Forecasting System
+**Week 10-13 | Machine Learning + Deployment | Planned**
+
+**Business Problem:** Retail chain needs accurate sales forecasts to optimize inventory investment and reduce waste while meeting demand.
+
+**Dataset:** Real grocery store sales data from Corporación Favorita (Ecuador) | 3+ years of daily sales
+
+**Advanced ML Implementation (4-Week Build):**
+
+**Week 10 - Exploratory Analysis:**
+- Deep time series analysis: trend, seasonality, residuals decomposition
+- External factor analysis: holidays, promotions, oil prices impact
+- Store-level and product category variations
+- **Deliverable:** Comprehensive EDA notebook (15-20 pages), 15+ visualizations
+
+**Week 11-12 - Model Development:**
+- **Baseline models:** Moving average, naive forecast, linear regression
+- **Advanced models:** Random Forest, XGBoost, ARIMA (time series specific)
+- Feature engineering: lag features, rolling statistics, holiday indicators
+- Cross-validation strategy for time series
+- **Metrics:** RMSE, MAE, MAPE with business context
+- Error analysis and feature importance interpretation
+
+**Week 13 - Production Simulation:**
+- Modularized Python package (preprocessing, training, prediction modules)
+- **Streamlit web app:** Upload data → Generate forecasts → Visualize results
+- **App features:** Interactive predictions, downloadable reports, model explanations
+- **Deployment:** Live app on Streamlit Cloud (shareable link)
+- Complete technical documentation and user guide
+
+**Business Impact (Expected):**
+- Reduce inventory waste by 10-15% through accurate forecasting
+- Optimize staffing schedules based on predicted demand patterns
+- Identify high-ROI promotional periods
+- Provide forecast confidence intervals for risk management
+
+**Deliverables:**
+- Multiple Jupyter notebooks (EDA, baseline models, advanced models)
+- Clean Python package with modular code structure
+- **Deployed web application** (accessible via link - portfolio highlight!)
+- Technical report: Model methodology, performance, limitations
+- 5-minute video demo showcasing the system
+
+**Skills Showcased:** Time Series Analysis, Machine Learning (multiple algorithms), Model Evaluation, Python Packaging, Web Development (Streamlit), Software Engineering Best Practices, Communication (video demo)
+
+**Production-Ready Mindset:** This project goes beyond Jupyter notebooks to demonstrate how data science solutions are deployed in real companies.
+
+**Dataset:** [Store Sales Forecasting - Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)
+
+📁 [View Project Details →](./03-projects/03-sales-forecasting-system)
 
 ---
 
@@ -330,6 +355,6 @@ Open to feedback, mentorship, and internship opportunities.
 
 ---
 
-**Last Updated:** January 27, 2026 | Day 4 of 112
+**Last Updated:** January 30, 2026 | Day 5 of 112
 
 *"Consistency beats intensity. Building something meaningful, one day at a time."*
