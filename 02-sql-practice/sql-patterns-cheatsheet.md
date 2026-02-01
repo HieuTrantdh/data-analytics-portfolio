@@ -16,9 +16,9 @@ WHERE rn <= 5;
 ```
 
 ### RANK vs DENSE_RANK
+```sql
 -- RANK: 1,2,2,4 (skip 3)
 -- DENSE_RANK: 1,2,2,3 (no skip)
-```sql
 SELECT 
     student_name,
     score,
