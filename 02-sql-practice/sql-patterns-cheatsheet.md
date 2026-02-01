@@ -12,7 +12,7 @@ FROM (
         ROW_NUMBER() OVER (PARTITION BY category ORDER BY sales DESC) as rn
     FROM products
 ) ranked
-WHERE rn <= 5;
+WHERE rn <= 5;```
 
 
 **### RANK vs DENSE_RANK**
