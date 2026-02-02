@@ -2,296 +2,324 @@
 
 **Hieu Tran** | Data Analyst in Training | Vietnam National University, Hanoi
 
-16-week intensive program to become internship-ready | Building in public
+24-week sustainable program to become internship-ready | Building in public
 
 ---
 
 ## Key Highlights
 
-**112-Day Commitment:** Daily practice and project work (Current streak: 6 days)
+**6-Month Commitment:** Sustainable learning with real-world impact (Current: Week 1, Day 7)
 
-**3 Comprehensive Projects:** End-to-end analytics from data collection to deployed solutions - not just notebooks
+**3 Real-World Projects:** Solving actual problems for real users in Vietnam - not just portfolio pieces
 
-**Production-Ready Focus:** Each project delivers actionable business value with professional documentation
+**Production-Ready Focus:** Live applications with measurable user impact and business value
 
-**Unique Vietnam Context:** Original research on Vietnam's tech landscape - data unavailable elsewhere
+**Unique Vietnam Context:** Price tracking, air quality monitoring, VNU student tools - problems that matter locally
 
-**Building in Public:** Full transparency - every query, every mistake, every learning documented
+**Building in Public:** Full transparency - documenting the journey from idea to deployed solution
 
 ---
 
 ## About
 
-Year 2 student on a focused journey to master data analytics through comprehensive real-world projects. This portfolio demonstrates end-to-end capabilities: from raw data acquisition to business recommendations and deployed solutions.
+Year 2 student at Vietnam National University, Hanoi on a mission to master data analytics through solving real problems. This portfolio showcases end-to-end capabilities: from identifying user needs to deploying production solutions.
 
-**Timeline:** January - April 2026 (16 weeks)  
-**Goal:** Land Data Analyst internship with demonstrable production-ready skills
+**Timeline:** January - July 2026 (24 weeks / 6 months)  
+**Goal:** Land Technical Data Analyst internship with portfolio of deployed, user-validated projects
 
-**What sets this apart:**
-- Projects span 3-4 weeks each, showing depth beyond surface-level tutorials
-- Mix of SQL, Python, ML, and deployment - full technical stack
-- Original data collection (web scraping) alongside curated datasets
-- Business-first approach with clear ROI focus
-- Deployed applications with shareable links for recruiters
+**What makes this different:**
+- **Real users, real impact:** Each project serves 10-200 actual users with measurable outcomes
+- **Vietnam-specific problems:** Solving challenges unique to Vietnamese market
+- **Production deployment:** Live applications accessible via public URLs
+- **User validation:** Testimonials and usage metrics from real people
+- **Sustainable approach:** 12-15 hours/week, flexible around academic schedule
 
 ---
 
 ## Technical Skills
 
-**SQL** - Advanced (70%)
+**SQL** - Advanced (70% → 100% by Week 2)
 - Complex JOINs, Window Functions, CTEs
 - Analytical queries (Cohort, RFM, Funnel)
-- Query optimization
+- Query optimization and database design
 
-**Python** - Learning (Week 3 start)
-- pandas, NumPy, matplotlib, seaborn
-- Web scraping (BeautifulSoup, Selenium)
-- NLP (TextBlob, basic text analytics)
-- Machine learning (scikit-learn, XGBoost)
+**Python** - Intermediate (Week 3+)
+- Data engineering: pandas, SQLAlchemy, automation
+- Web scraping: Scrapy, BeautifulSoup, Selenium
+- Analysis: NumPy, matplotlib, seaborn, scipy
+- ML: scikit-learn, ARIMA forecasting
+- APIs: FastAPI, Telegram Bot
 
-**Excel** - Intermediate (50%)
-- PivotTables, Power Query, INDEX-MATCH
-- Array formulas, data validation
-- Advanced functions and dashboards
+**Data Engineering** - Learning (Week 2+)
+- ETL pipeline design and automation
+- Workflow orchestration (Airflow basics)
+- Data quality and validation
+- PostgreSQL database design
 
-**Business Intelligence** - Week 4, 8
-- Tableau Public
-- Dashboard design and storytelling
-- Interactive visualizations
-
-**Machine Learning** - Week 10-13
-- Time series forecasting
-- Model evaluation and selection
-- Feature engineering
-- Web deployment (Streamlit)
+**Deployment & Tools**
+- Streamlit web applications
+- Cloud deployment (Streamlit Cloud, Railway)
+- Git version control
+- Docker basics (Week 13+)
 
 ---
 
 ## Portfolio Projects
 
-> **Project Philosophy:** Quality over quantity. Three comprehensive projects demonstrating end-to-end data analytics skills - from data collection to business recommendations.
+> **Project Philosophy:** Build solutions people actually use. Real users, real feedback, real impact.
 
 ---
 
-### Project 1: E-Commerce Analytics Platform
-**Week 2-4 | SQL + Python + Tableau | In Progress**
+### Project 1: Vietnam E-Commerce Price Intelligence
+**Week 2-8 | Web Scraping + SQL + Python + Deployment | In Progress**
 
-**Business Challenge:** E-commerce company needs actionable insights to increase revenue and improve customer retention in a competitive market.
+**Real Problem:** Shopee and Tiki prices fluctuate constantly. Vietnamese shoppers don't know when to buy, and fake discounts mislead consumers.
 
-**Dataset:** 100,000 real orders from Brazilian E-Commerce (Olist) | 8 relational tables
+**My Solution:** Automated price tracking system that monitors products daily, detects genuine deals, and alerts users when prices drop.
 
-**Comprehensive Analysis (3-Week Deep Dive):**
+**How It Works:**
+- Track 10-15 popular products (laptops, phones) on Shopee/Tiki
+- Scrape prices daily using Python (Scrapy)
+- Store in PostgreSQL with full price history
+- Analyze patterns: Real vs fake discounts, best time to buy
+- Alert users via Telegram/Email when target price is reached
 
-**Week 2 - SQL Mastery:**
-- Revenue intelligence: Daily/weekly/monthly trends with growth rates
-- Customer segmentation using RFM methodology in pure SQL
-- Product performance: ABC analysis (80/20 rule)
-- Geographic insights: Sales patterns by state/city
-- Operational metrics: Delivery performance and review correlation
+**Technical Implementation:**
 
-**SQL Techniques Demonstrated:**
-- Complex multi-table JOINs (4-5 tables)
-- Advanced Window Functions (RANK, LAG, LEAD, running totals)
-- CTEs and subqueries for complex logic
-- Date functions and aggregations
-- CASE WHEN for business rules
+**Week 2-4: Data Pipeline (Sprint during holiday break)**
+- Build Scrapy spiders for Shopee + Tiki
+- PostgreSQL database design (products, price_history, alerts)
+- Automated daily scraping (cron job)
+- Data validation and quality checks
 
-**Week 3 - Python Analytics:**
-- Statistical analysis (correlation, distributions, outliers)
-- 8-10 professional visualizations (trends, heatmaps, scatter plots)
-- Cohort retention matrix
-- Basic predictive insights (linear regression for forecasting)
+**Week 5-6: Analysis & Insights**
+- Python analysis: Price patterns, discount authenticity
+- Statistical tests: Correlation between ratings and prices
+- Identify optimal buying windows
+- Jupyter notebook with findings
 
-**Week 4 - Business Deliverables:**
-- Interactive Tableau dashboard (published publicly)
-- Executive report (PDF, 3-5 pages) with strategic recommendations
-- Complete GitHub documentation with reproducible code
+**Week 7-8: User Application**
+- Streamlit web app: Search products, view price history, set alerts
+- Alert system: Telegram bot or email notifications
+- Deploy to Streamlit Cloud
+- Onboard 5-10 real users (friends, family, classmates)
 
-**Expected Business Impact:**
-- Identify top 20% customers driving 80% revenue
-- Optimize delivery operations to reduce late deliveries by 15%
-- Product bundling recommendations to increase AOV
-- Geographic expansion opportunities based on untapped markets
+**Expected Impact:**
+- **Users:** 5-10 people actively tracking prices
+- **Savings:** Average 1-2M VND per user on purchases
+- **Insights:** Identify X% fake discounts vs real deals
+- **Testimonials:** User feedback validating usefulness
 
-**Skills Showcased:** Advanced SQL, Python (pandas, matplotlib, seaborn, scipy), Tableau, Business Analysis, Technical Documentation
+**Skills Demonstrated:**
+- Web scraping at scale (respecting rate limits, error handling)
+- Database design for time-series data
+- Data pipeline automation
+- Statistical analysis and pattern detection
+- Building user-facing applications
+- Product thinking (user needs → features)
 
-**Dataset:** [Brazilian E-Commerce - Kaggle](https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce)
+**Dataset:** Original data scraped from Shopee/Tiki (proprietary)
 
-[View Project Details →](./03-projects/01-ecommerce-analytics-platform)
-
----
-
-### Project 2: Vietnam Tech News Intelligence
-**Week 6-8 | Web Scraping + NLP + Analysis | Planned**
-
-**Research Question:** What are the hottest trends in Vietnam's tech ecosystem? Which technologies and topics dominate the news cycle?
-
-**Why This Project Stands Out:**
-- Original data collection - Web scraping, not pre-made datasets
-- Shows initiative - Self-directed research project
-- Vietnam-specific - Unique insights unavailable elsewhere
-- Current & relevant - Real-time tech landscape analysis
-
-**Data Collection Strategy:**
-- Primary sources: VnExpress Tech, Genk.vn (RSS feeds - 200-300 articles)
-- Secondary: TechInAsia Vietnam (web scraping if feasible)
-- Time period: Recent 6-12 months of tech coverage
-
-**Analysis Framework:**
-
-**Week 6 - Data Collection:**
-- Build RSS feed scraper (Python: feedparser, requests)
-- Implement web scraper for dynamic content (BeautifulSoup/Selenium)
-- Data cleaning: text normalization, duplicate removal
-- Dataset: 300-400 tech news articles
-
-**Week 7 - Text Analytics:**
-- Topic modeling: Most discussed topics (AI, blockchain, startups, funding)
-- Trend analysis: Topic popularity over time
-- Keyword extraction: Top companies, technologies, people mentioned
-- Sentiment analysis: Positive/negative/neutral distribution using TextBlob
-- Temporal patterns: Publishing frequency and hot news periods
-
-**Week 8 - Insights & Deliverables:**
-- Interactive Tableau dashboard: Topic trends, word clouds, sentiment gauges
-- Research report: "Vietnam Tech Landscape 2026: Data-Driven Insights"
-- Blog post: "I Analyzed 300+ Vietnam Tech Articles: Here's What's Hot"
-- Public dataset release on Kaggle - first Vietnamese tech news dataset
-
-**Research Findings (Expected):**
-- Top 10 most covered tech topics in Vietnam
-- Which companies/startups get most media attention
-- Sentiment trends (positive vs critical coverage)
-- Emerging technologies gaining traction
-- Content gaps and underreported topics
-
-**Skills Showcased:** Web Scraping, NLP (Natural Language Processing), Text Analytics, Data Cleaning (messy real-world data), Python (Beautiful Soup, pandas, TextBlob), Data Visualization
-
-**Unique Value:** Demonstrates ability to gather original data and conduct independent research - a key differentiator from candidates who only use pre-cleaned datasets.
-
-[View Project Details →](./03-projects/02-vietnam-tech-news-intelligence)
+[View Project →](./03-projects/01-ecommerce-price-tracker) *(In Development)*
 
 ---
 
-### Project 3: Sales Forecasting System
-**Week 10-13 | Machine Learning + Deployment | Planned**
+### Project 2: Hanoi Air Quality Alert System
+**Week 11-20 | API Integration + Time Series + ML + Telegram Bot | Planned**
 
-**Business Problem:** Retail chain needs accurate sales forecasts to optimize inventory investment and reduce waste while meeting demand.
+**Real Problem:** Hanoi's air quality is frequently hazardous, but people don't know when it's safe to go outside, exercise, or commute.
 
-**Dataset:** Real grocery store sales data from Corporación Favorita (Ecuador) | 3+ years of daily sales
+**My Solution:** Real-time AQI monitoring system with ML-powered forecasting and smart alerts via Telegram bot.
 
-**Advanced ML Implementation (4-Week Build):**
+**How It Works:**
+- Collect hourly AQI data from IQAir API (5+ Hanoi locations)
+- Store time-series data in PostgreSQL
+- Analyze patterns: Worst times, weather correlations
+- Forecast AQI 6 hours ahead using ARIMA
+- Alert subscribers when AQI crosses thresholds
 
-**Week 10 - Exploratory Analysis:**
-- Deep time series analysis: trend, seasonality, residuals decomposition
-- External factor analysis: holidays, promotions, oil prices impact
-- Store-level and product category variations
-- Deliverable: Comprehensive EDA notebook (15-20 pages), 15+ visualizations
+**Technical Implementation:**
 
-**Week 11-12 - Model Development:**
-- Baseline models: Moving average, naive forecast, linear regression
-- Advanced models: Random Forest, XGBoost, ARIMA (time series specific)
-- Feature engineering: lag features, rolling statistics, holiday indicators
-- Cross-validation strategy for time series
-- Metrics: RMSE, MAE, MAPE with business context
-- Error analysis and feature importance interpretation
+**Week 11-12: Data Pipeline**
+- API integration: IQAir, OpenWeather
+- PostgreSQL time-series schema
+- Automated hourly collection (Airflow)
+- 2 weeks of historical data collection
 
-**Week 13 - Production Simulation:**
-- Modularized Python package (preprocessing, training, prediction modules)
-- Streamlit web app: Upload data → Generate forecasts → Visualize results
-- App features: Interactive predictions, downloadable reports, model explanations
-- Deployment: Live app on Streamlit Cloud (shareable link)
-- Complete technical documentation and user guide
+**Week 14-15: Analysis & Forecasting**
+- Pattern analysis: Time of day, weather impact
+- Statistical correlations
+- ARIMA model for 6-hour forecast
+- Model evaluation (target: 75%+ accuracy)
 
-**Business Impact (Expected):**
-- Reduce inventory waste by 10-15% through accurate forecasting
-- Optimize staffing schedules based on predicted demand patterns
-- Identify high-ROI promotional periods
-- Provide forecast confidence intervals for risk management
+**Week 17-18: Alert System & Dashboard**
+- Telegram bot: Subscribe, set preferences, receive alerts
+- Alert logic: Real-time threshold alerts, daily forecasts
+- Streamlit dashboard: Live AQI map, historical trends
+- Deploy both bot and dashboard
 
-**Deliverables:**
-- Multiple Jupyter notebooks (EDA, baseline models, advanced models)
-- Clean Python package with modular code structure
-- Deployed web application (accessible via link - portfolio highlight!)
-- Technical report: Model methodology, performance, limitations
-- 5-minute video demo showcasing the system
+**Expected Impact:**
+- **Users:** 10-20 Hanoi residents
+- **Alerts sent:** 100+ over 1 month
+- **Forecast accuracy:** 75%+ (MAE <20 AQI points)
+- **Use cases:** Help users decide when to exercise outdoors
 
-**Skills Showcased:** Time Series Analysis, Machine Learning (multiple algorithms), Model Evaluation, Python Packaging, Web Development (Streamlit), Software Engineering Best Practices, Communication (video demo)
+**Skills Demonstrated:**
+- API integration and data collection
+- Time-series analysis and forecasting
+- Machine learning (ARIMA)
+- Telegram Bot development
+- Real-time systems
+- Deployment and monitoring
 
-**Production-Ready Mindset:** This project goes beyond Jupyter notebooks to demonstrate how data science solutions are deployed in real companies.
+**Dataset:** Real-time AQI data via IQAir API
 
-**Dataset:** [Store Sales Forecasting - Kaggle](https://www.kaggle.com/competitions/store-sales-time-series-forecasting)
+[View Project →](./03-projects/02-hanoi-aqi-alerts) *(Week 11 Start)*
 
-[View Project Details →](./03-projects/03-sales-forecasting-system)
+---
+
+### Project 3: VNU Course Registration Optimizer
+**Week 22-28+ | ML Classification + User Research + Deployment | Planned**
+
+**Real Problem:** VNU course registration is chaotic - popular courses fill up in hours, students don't know which courses to prioritize.
+
+**My Solution:** ML-powered tool that predicts which courses will fill quickly and recommends optimal registration strategy.
+
+**How It Works:**
+- Scrape VNU course portal (200+ courses, historical data)
+- Survey 50-100 VNU students on pain points
+- Build ML model: Predict probability of course filling in 24h
+- Recommendation engine: Given wishlist → optimal registration order
+- Web app for VNU students
+
+**Technical Implementation:**
+
+**Week 22-23: Research & Data**
+- User research: Survey students, identify key problems
+- Web scraping: VNU portal (handle authentication)
+- Dataset: Courses, schedules, enrollment history
+
+**Week 25-26: ML Model**
+- Feature engineering: Course attributes, instructor, time slot
+- Classification model: Logistic Regression, Random Forest
+- Target: Predict "will fill in 24h" (binary)
+- Evaluation: 80%+ accuracy target
+
+**Week 28-29: User Application**
+- Streamlit app: Search courses, build wishlist, get strategy
+- Share in VNU student groups (Facebook, Zalo)
+- Collect feedback, iterate
+- Aim for 50-100 student users
+
+**Expected Impact:**
+- **Users:** 50-100 VNU students
+- **Prediction accuracy:** 80%+
+- **Success stories:** Students getting desired courses thanks to tool
+- **Viral potential:** Word-of-mouth in VNU community
+
+**Skills Demonstrated:**
+- User research and problem validation
+- Web scraping with authentication
+- Machine learning classification
+- Recommendation systems
+- Product launch and user acquisition
+- Community impact
+
+**Dataset:** Original VNU course data (proprietary)
+
+[View Project →](./03-projects/03-vnu-course-optimizer) *(Week 22 Start)*
 
 ---
 
 ## What Makes This Portfolio Different
 
-**Depth Over Breadth**
-- 3-4 weeks per project showing comprehensive analysis
-- Each project mirrors real job responsibilities
-- Focus on end-to-end delivery, not just coding exercises
+**Real Users, Real Impact**
+- Not hypothetical business cases - actual people using the tools
+- Measurable outcomes: money saved, better decisions made
+- User testimonials and feedback
 
-**Original Research**
-- Project 2 involves gathering original data through web scraping
-- Vietnam-specific insights demonstrating initiative
-- Contributing to community with public dataset release
+**Vietnam-Specific Problems**
+- Solutions tailored to local market (Shopee, Tiki, Hanoi AQI, VNU)
+- Unique insights unavailable elsewhere
+- Demonstrates cultural context understanding
 
-**Production Mindset**
-- Project 3 includes deployed web application
-- Professional documentation standards
-- Code organized as reusable packages, not just notebooks
+**End-to-End Ownership**
+- Problem identification → User research → Building → Deployment → User feedback
+- Full product lifecycle experience
+- Not just coding, but product thinking
 
-**Business Value Focus**
-- Every analysis ties back to specific business outcomes
-- Quantified expected impact (e.g., "reduce waste by 15%")
-- Executive-level deliverables, not just technical reports
-
----
-
-## Learning Roadmap
-
-**Phase 1: SQL Foundation** (Week 1)
-- Advanced SQL mastery
-- LeetCode SQL 50 completion
-- Excel intermediate skills
-- Prepare for Project 1
-
-**Phase 2: E-Commerce Analytics** (Week 2-4)
-- Week 2: SQL analysis (revenue, customers, products)
-- Week 3: Python analytics and visualizations
-- Week 4: Tableau dashboard and executive report
-- Project 1 completion
-
-**Phase 3: Python & Web Scraping** (Week 5-8)
-- Week 5: Python consolidation, web scraping fundamentals
-- Week 6-8: Vietnam Tech News Intelligence project
-- NLP and text analytics skills
-- Project 2 completion
-
-**Phase 4: Machine Learning** (Week 9-13)
-- Week 9: ML fundamentals, time series introduction
-- Week 10-13: Sales Forecasting System project
-- Model development and deployment
-- Project 3 completion
-
-**Phase 5: Portfolio & Job Search** (Week 14-16)
-- Week 14: Virtual externships (Accenture, KPMG, BCG)
-- Week 15: Portfolio website and documentation polish
-- Week 16: Job applications and interview preparation
+**Production Deployment**
+- All projects have live URLs recruiters can visit
+- Real-world deployment challenges solved
+- Ongoing maintenance and iteration
 
 ---
 
-## Problem-Solving Track Record
+## Learning Roadmap (24 Weeks)
 
-**SQL Practice (LeetCode, StrataScratch)**
-- 35 problems solved (70% of target)
-- Focus areas: CTEs (10), Window Functions (12), JOINs (8), Analytics (5)
-- Average time: 18 minutes per problem (improving)
+**Current Phase: Foundation (Week 1-3)**
+- Week 1: SQL mastery (LeetCode 50/50) ← Current: Day 7
+- Week 2: Python + Database design
+- Week 3: Buffer / Python advanced
 
-**All solutions documented:** [View SQL Practice →](./02-sql-practice/)
+**Phase 1: Price Tracker Project (Week 2-8)**
+- Week 2-4: Build scraper + automation (sprint during holiday)
+- Week 5-6: Data analysis + insights
+- Week 7-8: User app + deployment
+- **Deliverable:** Live app with 5-10 users
 
+**Phase 2: Preparation (Week 9-10)**
+- Week 9: Python advanced, API basics
+- Week 10: Buffer / Academic priority
+
+**Phase 3: AQI Alert Project (Week 11-20)**
+- Week 11-12: API integration + data collection
+- Week 14-15: Analysis + ML forecasting
+- Week 17-18: Telegram bot + dashboard
+- Week 13, 16, 19: Buffer weeks
+- **Deliverable:** Live bot + dashboard, 10-20 users
+
+**Phase 4: VNU Tool Project (Week 21-28+)**
+- Week 22-23: User research + data scraping
+- Week 25-26: ML model development
+- Week 28-29: App deployment + user acquisition
+- **Deliverable:** Live app, 50-100 VNU student users
+
+**Phase 5: Portfolio & Job Search (Week 30-32)**
+- Week 30: Portfolio website + blog posts
+- Week 31: Virtual externships
+- Week 32: Job applications
+
+---
+
+## Why Hire Me for an Internship?
+
+**Proven Ability to Ship**
+- Don't just analyze - build production solutions
+- Experience with full development lifecycle
+- Portfolio of deployed applications with real users
+
+**Real-World Problem Solving**
+- Identify user needs and validate solutions
+- Iterate based on feedback
+- Measure and demonstrate impact
+
+**Technical Versatility**
+- SQL, Python, ML, deployment - full stack
+- Self-taught through project-based learning
+- Quick learner adapting to new tools
+
+**User-Centric Mindset**
+- Build for users, not just for portfolio
+- Understand business value and ROI
+- Can communicate technical work to non-technical stakeholders
+
+**Vietnam Market Knowledge**
+- Deep understanding of local market (e-commerce, tech landscape, education)
+- Bilingual: Vietnamese + English
+- Cultural context for business insights
+
+                            
 ---
 
 ## Certifications
@@ -301,23 +329,30 @@ Year 2 student on a focused journey to master data analytics through comprehensi
 - Kaggle: Advanced SQL (Nov 2025)
 
 **In Progress:**
-- LeetCode SQL 50 Badge (70% complete)
+- LeetCode SQL 50 Badge (70% → target: 100% by Week 2)
 
-**Planned (Week-by-week):**
-- Week 3: Kaggle Python + Pandas
-- Week 5: Kaggle Data Cleaning + Visualization
-- Week 9: Introduction to Machine Learning
-- Week 14: Virtual Externships (Accenture, KPMG, BCG)
+**Planned:**
+- Week 9: Kaggle Python + Pandas
+- Week 10: Kaggle Data Cleaning
+- Week 21: Introduction to Machine Learning (Coursera/Kaggle)
+- Week 30: Virtual Externships (Forage: BCG, Accenture)
 
 ---
 
 ## Connect
 
-Open to feedback, mentorship, and internship opportunities.
+Open to feedback, collaboration, and internship opportunities.
 
 **LinkedIn:** [https://www.linkedin.com/in/hieutran-analytics/]  
 **Email:** tranhieu71tdh@gmail.com  
 **Kaggle:** [https://www.kaggle.com/kydiotsann71]  
 **GitHub:** You're already here - star this repo to follow my journey
 
-**Last Updated:** Febuary 1, 2026 | Day 7 of 112
+**Looking for:** 
+- Mentorship from experienced data professionals
+- Feedback on project ideas and implementations
+- Internship opportunities (available from Week 32 - August 2026)
+
+---
+
+**Last Updated:** January 27, 2026 | Week 1, Day 7 of 168 days
