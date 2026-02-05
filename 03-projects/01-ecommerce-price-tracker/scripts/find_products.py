@@ -6,16 +6,11 @@ from scrapers.tiki_scraper import fetch_tiki_product
 def find_products():
     path = os.path.abspath("data/target-products.json")
     print("DEBUG loading from:", path)
-    
-    with open("data/target-products.json", encoding="utf-8") as f:
+
+    with open(path, encoding="utf-8") as f:
         targets = json.load(f)
 
-    print("DEBUG targets length:", len(targets))
-
-    tiki_targets = [
-        item for item in targets
-        if item.get("platform") == "tiki"
-    ]
+    tiki_targets = [i for i in targets if i.get("platform") == "tiki"]
 
     results = []
 
@@ -38,7 +33,7 @@ def find_products():
     with open("data/tiki-products.json", "w", encoding="utf-8") as f:
         json.dump(results, f, indent=2, ensure_ascii=False)
 
-    print(f"✅ Done! Saved {len(results)} products to data/tiki-products.json")
+    print(f"✅ Done! Saved {len(results)} products")
 
 
 if __name__ == "__main__":

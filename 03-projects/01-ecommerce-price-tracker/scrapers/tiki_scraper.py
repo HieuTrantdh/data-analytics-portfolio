@@ -2,6 +2,7 @@ import requests
 import time
 import random
 import re
+from datetime import datetime
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0",
@@ -30,12 +31,30 @@ def fetch_tiki_product(url: str):
 
     data = resp.json()
 
+    # -------------------------
+    # SAFE EXTRACTIONS
+    # -------------------------
+    seller = data.get("seller")
+    seller_name = seller.get("name") if isinstance(seller, dict) else None
+
+    rating_average = data.get("rating_average")
+    review_count = data.get("review_count")
+
     return {
         "platform": "tiki",
+        "product_id": product_id,
         "name": data.get("name"),
-        "price": data.get("price", 0),
-        "original_price": data.get("original_price"),
-        "discount_rate": data.get("discount_rate"),
-        "rating": data.get("rating_average"),
         "url": url,
+
+        "price": data.get("price"),
+        "original_price": data.get("original_price"),
+        "discount_percent": data.get("discount_rate"),
+
+        "rating_average": rating_average if review_count and review_count > 0 else None,
+        "review_count": review_count or 0,
+
+        "seller_name": seller_name,
+        "stock_available": data.get("quantity", 0) > 0,
+
+        "scraped_at": datetime.utcnow().isoformat()
     }
