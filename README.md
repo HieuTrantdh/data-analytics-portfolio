@@ -1,8 +1,8 @@
-# Data Analytics Portfolio  
+# Data Analytics Portfolio (DE-oriented) 
 **Hieu Tran** | Data Analyst in Training  
 Vietnam National University, Hanoi 🇻🇳  
 
- **24-week sustainable program to become internship-ready**  
+ **24-week structured program focused on data analytics and data systems fundamentals**  
  **Building in public – documenting real progress, real projects, real users**
 
 ---
@@ -12,12 +12,12 @@ Vietnam National University, Hanoi 🇻🇳
 - **6-Month Commitment:** Sustainable learning with real-world impact  
   *(Current: Week 1, Day 8)*
 
-- **3 Real-World Projects:** Solving actual problems for real users in Vietnam – not toy datasets
+- **3 Real-World Projects:** Solving real problems for users in Vietnam, with a focus on data collection, storage, and analysis
 
-- **Production-Ready Focus:** Live applications with measurable user impact & business value
+- **Production-Ready Focus:** System-Oriented Focus: Designing projects with clean structure, database-backed storage, and maintainable data workflows
 
 - **Vietnam-Specific Context:**  
-  E-commerce price tracking, Hanoi air quality alerts, VNU student tools
+  E-commerce price tracking, Hanoi air quality alerts, VNU student tools, with real data sources
 
 - **Building in Public:** Full transparency – from idea → deployment → user feedback
 
@@ -25,37 +25,49 @@ Vietnam National University, Hanoi 🇻🇳
 
 ##  About Me
 
-Year 2 student at **Vietnam National University, Hanoi**, on a mission to master **Data Analytics through solving real problems**.
+I am a second-year student at Vietnam National University, Hanoi, focused on building a strong **foundation in data analytics and data systems** by solving real-world problems.
 
-This portfolio demonstrates **end-to-end ownership**:
-> Identify problems → design solutions → build pipelines → deploy applications → validate with users
+This portfolio reflects an **end-to-end, system-oriented** approach to learning:
 
-**Timeline:** January – July 2026 (24 weeks)  
-**Goal:** Secure a **Technical Data Analyst Internship** with a portfolio of **deployed, user-validated projects**
+**Identify problems** → design solutions → build data pipelines → deploy applications → evaluate with real users
+
+**Timeline**: January – July 2026 (24 weeks)
+**Goal**: Secure a **Technical Data Analyst** Internship, while developing skills that bridge analytics and data engineering through hands-on, user-facing projects.
 
 ---
 
 ##  What Makes This Portfolio Different
 
 ###  Real Users, Real Impact
-- Each project targets **10–200 real users**
-- Measurable outcomes: money saved, better decisions made
-- User feedback & testimonials
+- Each project is designed for **real users**, typically ranging from tens to hundreds
+
+- Focus on measurable outcomes such as cost savings, improved visibility, or better decision-making
+
+- User feedback is used to validate assumptions and guide iteration
 
 ### 🇻🇳 Vietnam-Specific Problems
-- Shopee & Tiki price manipulation
-- Hanoi air pollution
-- VNU course registration chaos  
-→ Problems recruiters **don’t see in generic portfolios**
+- E-commerce price tracking on Shopee and Tiki
+
+- Hanoi air quality monitoring
+
+- Tools to support VNU students in academic workflows
+
+- These are problems grounded in local context, using real data sources rather than curated datasets.
 
 ###  End-to-End Ownership
-- Not just SQL notebooks
-- Full product lifecycle: **problem → build → deploy → iterate**
+- Not limited to isolated SQL queries or notebooks
 
-###  Production Deployment
-- Live Streamlit apps & Telegram bots
-- Public URLs recruiters can actually click
-- Real maintenance & iteration challenges
+- Projects cover the full lifecycle: **problem definition, data collection, storage, processing, deployment, and iteration
+**
+- Emphasis on clean structure, maintainability, and clarity of data flow
+
+### Deployed, System-Backed Applications
+
+- Interactive applications built with Streamlit and messaging bots
+
+- Database-backed storage and structured data workflows
+
+- Hands-on experience with deployment, monitoring, and ongoing improvement based on real usage
 
 ---
 
