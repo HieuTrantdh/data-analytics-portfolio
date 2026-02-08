@@ -2,12 +2,12 @@
 **Hieu Tran** | Data Analyst in Training  
 Vietnam National University, Hanoi 🇻🇳  
 
-🎯 **24-week sustainable program to become internship-ready**  
-📢 **Building in public – documenting real progress, real projects, real users**
+ **24-week sustainable program to become internship-ready**  
+ **Building in public – documenting real progress, real projects, real users**
 
 ---
 
-## 🔑 Key Highlights
+##  Key Highlights
 
 - **6-Month Commitment:** Sustainable learning with real-world impact  
   *(Current: Week 1, Day 8)*
@@ -23,7 +23,7 @@ Vietnam National University, Hanoi 🇻🇳
 
 ---
 
-## 👋 About Me
+##  About Me
 
 Year 2 student at **Vietnam National University, Hanoi**, on a mission to master **Data Analytics through solving real problems**.
 
@@ -35,9 +35,9 @@ This portfolio demonstrates **end-to-end ownership**:
 
 ---
 
-## 🚀 What Makes This Portfolio Different
+##  What Makes This Portfolio Different
 
-### ✅ Real Users, Real Impact
+###  Real Users, Real Impact
 - Each project targets **10–200 real users**
 - Measurable outcomes: money saved, better decisions made
 - User feedback & testimonials
@@ -48,18 +48,18 @@ This portfolio demonstrates **end-to-end ownership**:
 - VNU course registration chaos  
 → Problems recruiters **don’t see in generic portfolios**
 
-### 🛠️ End-to-End Ownership
+###  End-to-End Ownership
 - Not just SQL notebooks
 - Full product lifecycle: **problem → build → deploy → iterate**
 
-### 🌐 Production Deployment
+###  Production Deployment
 - Live Streamlit apps & Telegram bots
 - Public URLs recruiters can actually click
 - Real maintenance & iteration challenges
 
 ---
 
-## 🧠 Technical Skills
+##  Technical Skills
 
 ### SQL – Advanced *(70% → targeting 100% by Week 2)*  
 - Complex JOINs  
@@ -89,17 +89,17 @@ This portfolio demonstrates **end-to-end ownership**:
 
 ---
 
-## 📊 Portfolio Projects
+##  Portfolio Projects
 
-### 🎯 Project Philosophy  
+###  Project Philosophy  
 **Build things people actually use.**  
 Real users. Real feedback. Real impact.
 
 ---
 
-## 📦 Project 1: Vietnam E-Commerce Price Intelligence  
+##  Project 1: Vietnam E-Commerce Price Intelligence  
 **Week 2–8 | Web Scraping + SQL + Python + Deployment**  
-🚧 *In Progress*
+ *In Progress*
 
 ### Real Problem  
 Shopee & Tiki prices fluctuate constantly.  
@@ -144,14 +144,14 @@ An **automated price tracking system** that:
 - **Insights:** % of fake discounts uncovered
 - **Validation:** User testimonials
 
-📌 Dataset: Original data scraped from Shopee & Tiki  
-🔗 **View Project → (In Development)**
+ Dataset: Original data scraped from Shopee & Tiki  
+ **View Project → (In Development)**
 
 ---
 
-## 🌫️ Project 2: Hanoi Air Quality Alert System  
+##  Project 2: Hanoi Air Quality Alert System  
 **Week 11–20 | API + Time Series + ML + Telegram Bot**  
-📝 *Planned*
+ *Planned*
 
 ### Real Problem  
 Hanoi residents lack **timely, actionable air quality insights**.
@@ -166,13 +166,13 @@ Hanoi residents lack **timely, actionable air quality insights**.
 - **Forecast accuracy:** 75%+  
 - **Use cases:** Exercise, commuting decisions
 
-🔗 **View Project → (Week 11 Start)**
+ **View Project → (Week 11 Start)**
 
 ---
 
-## 🎓 Project 3: VNU Course Registration Optimizer  
+##  Project 3: VNU Course Registration Optimizer  
 **Week 22–29 | ML + User Research + Deployment**  
-📝 *Planned*
+ *Planned*
 
 ### Real Problem  
 Course registration at VNU is chaotic & stressful.
@@ -187,11 +187,11 @@ Course registration at VNU is chaotic & stressful.
 - **Prediction accuracy:** 80%+
 - **Community-driven adoption**
 
-🔗 **View Project → (Week 22 Start)**
+ **View Project → (Week 22 Start)**
 
 ---
 
-## 🗺️ Learning Roadmap (24 Weeks)
+##  Learning Roadmap (24 Weeks)
 
 ### Current Phase: Foundation *(Week 1–3)*  
 - **Week 1:** SQL mastery (LeetCode SQL 50)   
@@ -199,29 +199,29 @@ Course registration at VNU is chaotic & stressful.
 - **Week 3:** Python advanced / buffer  
 
 ### Phase 1: Price Tracker *(Week 2–8)*  
-🎯 Deliverable: **Live app with real users**
+ Deliverable: **Live app with real users**
 
 ### Phase 2: AQI System *(Week 11–20)*  
-🎯 Deliverable: **Live bot + dashboard**
+ Deliverable: **Live bot + dashboard**
 
 ### Phase 3: VNU Tool *(Week 22–29)*  
-🎯 Deliverable: **50–100 student users**
+ Deliverable: **50–100 student users**
 
 ### Phase 4: Job Search *(Week 30–32)*  
 
 ---
 
-## 💼 Why Hire Me as an Intern?
+##  Why Hire Me as an Intern?
 
-- ✅ Proven ability to **ship production systems**
-- ✅ Strong **problem-solving & product thinking**
-- ✅ Full-stack analytics: SQL → Python → ML → Deployment
-- ✅ Deep **Vietnam market understanding**
-- ✅ Bilingual: Vietnamese 🇻🇳 / English 🇬🇧
+-  Proven ability to **ship production systems**
+-  Strong **problem-solving & product thinking**
+-  Full-stack analytics: SQL → Python → ML → Deployment
+-  Deep **Vietnam market understanding**
+-  Bilingual: Vietnamese 🇻🇳 / English 🇬🇧
 
 ---
 
-## 📜 Certifications
+##  Certifications
 
 **Completed**
 - Kaggle: Introduction to SQL *(Nov 2025)*
@@ -232,12 +232,12 @@ Course registration at VNU is chaotic & stressful.
 
 ---
 
-## 🤝 Connect
+##  Connect
 
 - **LinkedIn:** https://www.linkedin.com/in/hieutran-analytics/  
 - **Email:** tranhieu71tdh@gmail.com  
 - **Kaggle:** https://www.kaggle.com/kydiotsann71  
-- **GitHub:** You’re already here ⭐
+- **GitHub:** You’re already here 
 
 ---
 
