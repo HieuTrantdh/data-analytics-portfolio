@@ -258,5 +258,5 @@ Course registration at VNU is chaotic & stressful.
 - Feedback on project ideas & implementation  
 - **Internship opportunities (available from August 2026)**  
 
-📅 **Last Updated:** January 28, 2026  
-📍 **Progress:** Week 2, Day 8 of 168 days
+📅 **Last Updated:** Febuary 10, 2026  
+📍 **Progress:** Week 2, Day 9 of 168 days
