@@ -10,7 +10,7 @@ Vietnam National University, Hanoi 🇻🇳
 ##  Key Highlights
 
 - **6-Month Commitment:** Sustainable learning with real-world impact  
-  *(Current: Week 1, Day 8)*
+  *(Current: Week 2, Day 9)*
 
 - **3 Real-World Projects:** Solving real problems for users in Vietnam, with a focus on data collection, storage, and analysis
 
@@ -73,7 +73,7 @@ This portfolio reflects an **end-to-end, system-oriented** approach to learning:
 
 ##  Technical Skills
 
-### SQL – Advanced *(70% → targeting 100% by Week 2)*  
+### SQL – Advanced *(100% ✓)*  
 - Complex JOINs  
 - Window Functions  
 - CTEs  
@@ -238,9 +238,7 @@ Course registration at VNU is chaotic & stressful.
 **Completed**
 - Kaggle: Introduction to SQL *(Nov 2025)*
 - Kaggle: Advanced SQL *(Jan 2026)*
-
-**In Progress**
-- LeetCode SQL 50 Badge *(Target: 100% by Week 2)*
+- LeetCode SQL 50 Badge *(Feb 2026)*
 
 ---
 
@@ -258,5 +256,5 @@ Course registration at VNU is chaotic & stressful.
 - Feedback on project ideas & implementation  
 - **Internship opportunities (available from August 2026)**  
 
-📅 **Last Updated:** Febuary 10, 2026  
+📅 **Last Updated:** Febuary 11, 2026  
 📍 **Progress:** Week 2, Day 9 of 168 days
