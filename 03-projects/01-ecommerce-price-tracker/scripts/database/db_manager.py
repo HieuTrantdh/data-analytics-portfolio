@@ -106,9 +106,10 @@ class DatabaseManager:
         """
         with get_db_connection() as conn:
             with conn.cursor() as cur:
-                # Get seller_id
+                seller_name = product_data.get('seller_name') or 'Unknow Seller'
+
                 seller_id = DatabaseManager.get_or_create_seller(
-                    product_data['seller_name'],
+                    seller_name,
                     product_data['platform']
                 )
                 

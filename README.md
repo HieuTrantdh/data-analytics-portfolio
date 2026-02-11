@@ -1,67 +1,79 @@
-# Data Analytics Portfolio  
+# Data Analytics Portfolio (DE-oriented) 
 **Hieu Tran** | Data Analyst in Training  
 Vietnam National University, Hanoi 🇻🇳  
 
-🎯 **24-week sustainable program to become internship-ready**  
-📢 **Building in public – documenting real progress, real projects, real users**
+ **24-week structured program focused on data analytics and data systems fundamentals**  
+ **Building in public – documenting real progress, real projects, real users**
 
 ---
 
-## 🔑 Key Highlights
+##  Key Highlights
 
 - **6-Month Commitment:** Sustainable learning with real-world impact  
-  *(Current: Week 1, Day 8)*
+  *(Current: Week 2, Day 9)*
 
-- **3 Real-World Projects:** Solving actual problems for real users in Vietnam – not toy datasets
+- **3 Real-World Projects:** Solving real problems for users in Vietnam, with a focus on data collection, storage, and analysis
 
-- **Production-Ready Focus:** Live applications with measurable user impact & business value
+- **Production-Ready Focus:** System-Oriented Focus: Designing projects with clean structure, database-backed storage, and maintainable data workflows
 
 - **Vietnam-Specific Context:**  
-  E-commerce price tracking, Hanoi air quality alerts, VNU student tools
+  E-commerce price tracking, Hanoi air quality alerts, VNU student tools, with real data sources
 
 - **Building in Public:** Full transparency – from idea → deployment → user feedback
 
 ---
 
-## 👋 About Me
+##  About Me
 
-Year 2 student at **Vietnam National University, Hanoi**, on a mission to master **Data Analytics through solving real problems**.
+I am a second-year student at Vietnam National University, Hanoi, focused on building a strong **foundation in data analytics and data systems** by solving real-world problems.
 
-This portfolio demonstrates **end-to-end ownership**:
-> Identify problems → design solutions → build pipelines → deploy applications → validate with users
+This portfolio reflects an **end-to-end, system-oriented** approach to learning:
 
-**Timeline:** January – July 2026 (24 weeks)  
-**Goal:** Secure a **Technical Data Analyst Internship** with a portfolio of **deployed, user-validated projects**
+**Identify problems** → design solutions → build data pipelines → deploy applications → evaluate with real users
+
+**Timeline**: January – July 2026 (24 weeks)
+**Goal**: Secure a **Technical Data Analyst** Internship, while developing skills that bridge analytics and data engineering through hands-on, user-facing projects.
 
 ---
 
-## 🚀 What Makes This Portfolio Different
+##  What Makes This Portfolio Different
 
-### ✅ Real Users, Real Impact
-- Each project targets **10–200 real users**
-- Measurable outcomes: money saved, better decisions made
-- User feedback & testimonials
+###  Real Users, Real Impact
+- Each project is designed for **real users**, typically ranging from tens to hundreds
+
+- Focus on measurable outcomes such as cost savings, improved visibility, or better decision-making
+
+- User feedback is used to validate assumptions and guide iteration
 
 ### 🇻🇳 Vietnam-Specific Problems
-- Shopee & Tiki price manipulation
-- Hanoi air pollution
-- VNU course registration chaos  
-→ Problems recruiters **don’t see in generic portfolios**
+- E-commerce price tracking on Shopee and Tiki
 
-### 🛠️ End-to-End Ownership
-- Not just SQL notebooks
-- Full product lifecycle: **problem → build → deploy → iterate**
+- Hanoi air quality monitoring
 
-### 🌐 Production Deployment
-- Live Streamlit apps & Telegram bots
-- Public URLs recruiters can actually click
-- Real maintenance & iteration challenges
+- Tools to support VNU students in academic workflows
+
+- These are problems grounded in local context, using real data sources rather than curated datasets.
+
+###  End-to-End Ownership
+- Not limited to isolated SQL queries or notebooks
+
+- Projects cover the full lifecycle: **problem definition, data collection, storage, processing, deployment, and iteration
+**
+- Emphasis on clean structure, maintainability, and clarity of data flow
+
+### Deployed, System-Backed Applications
+
+- Interactive applications built with Streamlit and messaging bots
+
+- Database-backed storage and structured data workflows
+
+- Hands-on experience with deployment, monitoring, and ongoing improvement based on real usage
 
 ---
 
-## 🧠 Technical Skills
+##  Technical Skills
 
-### SQL – Advanced *(70% → targeting 100% by Week 2)*  
+### SQL – Advanced *(100% ✓)*  
 - Complex JOINs  
 - Window Functions  
 - CTEs  
@@ -89,17 +101,17 @@ This portfolio demonstrates **end-to-end ownership**:
 
 ---
 
-## 📊 Portfolio Projects
+##  Portfolio Projects
 
-### 🎯 Project Philosophy  
+###  Project Philosophy  
 **Build things people actually use.**  
 Real users. Real feedback. Real impact.
 
 ---
 
-## 📦 Project 1: Vietnam E-Commerce Price Intelligence  
+##  Project 1: Vietnam E-Commerce Price Intelligence  
 **Week 2–8 | Web Scraping + SQL + Python + Deployment**  
-🚧 *In Progress*
+ *In Progress*
 
 ### Real Problem  
 Shopee & Tiki prices fluctuate constantly.  
@@ -144,14 +156,14 @@ An **automated price tracking system** that:
 - **Insights:** % of fake discounts uncovered
 - **Validation:** User testimonials
 
-📌 Dataset: Original data scraped from Shopee & Tiki  
-🔗 **View Project → (In Development)**
+ Dataset: Original data scraped from Shopee & Tiki  
+ **View Project → (In Development)**
 
 ---
 
-## 🌫️ Project 2: Hanoi Air Quality Alert System  
+##  Project 2: Hanoi Air Quality Alert System  
 **Week 11–20 | API + Time Series + ML + Telegram Bot**  
-📝 *Planned*
+ *Planned*
 
 ### Real Problem  
 Hanoi residents lack **timely, actionable air quality insights**.
@@ -166,13 +178,13 @@ Hanoi residents lack **timely, actionable air quality insights**.
 - **Forecast accuracy:** 75%+  
 - **Use cases:** Exercise, commuting decisions
 
-🔗 **View Project → (Week 11 Start)**
+ **View Project → (Week 11 Start)**
 
 ---
 
-## 🎓 Project 3: VNU Course Registration Optimizer  
+##  Project 3: VNU Course Registration Optimizer  
 **Week 22–29 | ML + User Research + Deployment**  
-📝 *Planned*
+ *Planned*
 
 ### Real Problem  
 Course registration at VNU is chaotic & stressful.
@@ -187,11 +199,11 @@ Course registration at VNU is chaotic & stressful.
 - **Prediction accuracy:** 80%+
 - **Community-driven adoption**
 
-🔗 **View Project → (Week 22 Start)**
+ **View Project → (Week 22 Start)**
 
 ---
 
-## 🗺️ Learning Roadmap (24 Weeks)
+##  Learning Roadmap (24 Weeks)
 
 ### Current Phase: Foundation *(Week 1–3)*  
 - **Week 1:** SQL mastery (LeetCode SQL 50)   
@@ -199,45 +211,43 @@ Course registration at VNU is chaotic & stressful.
 - **Week 3:** Python advanced / buffer  
 
 ### Phase 1: Price Tracker *(Week 2–8)*  
-🎯 Deliverable: **Live app with real users**
+ Deliverable: **Live app with real users**
 
 ### Phase 2: AQI System *(Week 11–20)*  
-🎯 Deliverable: **Live bot + dashboard**
+ Deliverable: **Live bot + dashboard**
 
 ### Phase 3: VNU Tool *(Week 22–29)*  
-🎯 Deliverable: **50–100 student users**
+ Deliverable: **50–100 student users**
 
 ### Phase 4: Job Search *(Week 30–32)*  
 
 ---
 
-## 💼 Why Hire Me as an Intern?
+##  Why Hire Me as an Intern?
 
-- ✅ Proven ability to **ship production systems**
-- ✅ Strong **problem-solving & product thinking**
-- ✅ Full-stack analytics: SQL → Python → ML → Deployment
-- ✅ Deep **Vietnam market understanding**
-- ✅ Bilingual: Vietnamese 🇻🇳 / English 🇬🇧
+-  Proven ability to **ship production systems**
+-  Strong **problem-solving & product thinking**
+-  Full-stack analytics: SQL → Python → ML → Deployment
+-  Deep **Vietnam market understanding**
+-  Bilingual: Vietnamese 🇻🇳 / English 🇬🇧
 
 ---
 
-## 📜 Certifications
+##  Certifications
 
 **Completed**
 - Kaggle: Introduction to SQL *(Nov 2025)*
 - Kaggle: Advanced SQL *(Jan 2026)*
-
-**In Progress**
-- LeetCode SQL 50 Badge *(Target: 100% by Week 2)*
+- LeetCode SQL 50 Badge *(Feb 2026)*
 
 ---
 
-## 🤝 Connect
+##  Connect
 
 - **LinkedIn:** https://www.linkedin.com/in/hieutran-analytics/  
 - **Email:** tranhieu71tdh@gmail.com  
 - **Kaggle:** https://www.kaggle.com/kydiotsann71  
-- **GitHub:** You’re already here ⭐
+- **GitHub:** You’re already here 
 
 ---
 
@@ -246,5 +256,5 @@ Course registration at VNU is chaotic & stressful.
 - Feedback on project ideas & implementation  
 - **Internship opportunities (available from August 2026)**  
 
-📅 **Last Updated:** January 28, 2026  
-📍 **Progress:** Week 2, Day 8 of 168 days
+📅 **Last Updated:** Febuary 11, 2026  
+📍 **Progress:** Week 2, Day 9 of 168 days
