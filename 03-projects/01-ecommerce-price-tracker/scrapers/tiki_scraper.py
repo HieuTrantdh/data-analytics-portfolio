@@ -24,37 +24,54 @@ def fetch_tiki_product(url: str):
 
     api_url = f"https://tiki.vn/api/v2/products/{product_id}"
 
-    resp = requests.get(api_url, headers=HEADERS, timeout=10)
-    if resp.status_code != 200:
-        print("❌ API error", resp.status_code)
+    try:
+        resp = requests.get(api_url, headers=HEADERS, timeout=10)
+        resp.raise_for_status()
+    except requests.RequestException as e:
+        print("❌ API error:", e)
         return None
 
     data = resp.json()
 
+    # Debug 1 lần nếu cần
+    # print("DEBUG keys:", data.keys())
+
     # -------------------------
     # SAFE EXTRACTIONS
     # -------------------------
-    seller = data.get("seller")
-    seller_name = seller.get("name") if isinstance(seller, dict) else None
+    seller = data.get("seller") or {}
+    seller_name = seller.get("name")
 
+    price = data.get("price")
+    original_price = data.get("original_price")
+
+    review_count = data.get("review_count") or 0
     rating_average = data.get("rating_average")
-    review_count = data.get("review_count")
+
+    
+    if review_count == 0:
+        rating_average = None
+
+   
+    quantity = data.get("quantity") or 0
+    stock_available = quantity > 0
 
     return {
         "platform": "tiki",
         "product_id": product_id,
-        "name": data.get("name"),
+        "name": data.get("name") or "Unknown Product",
         "url": url,
 
-        "price": data.get("price"),
-        "original_price": data.get("original_price"),
-        "discount_percent": data.get("discount_rate"),
+        "price": price or 0,
+        "original_price": original_price or price or 0,
+        "discount_percent": data.get("discount_rate") or 0,
 
-        "rating_average": rating_average if review_count and review_count > 0 else None,
-        "review_count": review_count or 0,
+        "rating_average": rating_average,
+        "review_count": review_count,
 
         "seller_name": seller_name,
-        "stock_available": data.get("quantity", 0) > 0,
+        "stock_available": stock_available,
 
         "scraped_at": datetime.utcnow().isoformat()
     }
+

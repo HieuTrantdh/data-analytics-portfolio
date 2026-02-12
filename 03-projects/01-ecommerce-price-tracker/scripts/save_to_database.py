@@ -3,11 +3,7 @@ Save scraped Tiki products to PostgreSQL
 """
 
 import json
-import sys
 import os
-
-# Add parent directory to path
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from database.db_manager import DatabaseManager
 from scrapers.tiki_scraper import fetch_tiki_product

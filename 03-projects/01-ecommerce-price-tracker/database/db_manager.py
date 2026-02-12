@@ -9,6 +9,8 @@ from dotenv import load_dotenv
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from contextlib import contextmanager
+from utils.validators import DataValidator
+
 
 # Load environment variables
 load_dotenv()
@@ -95,47 +97,33 @@ class DatabaseManager:
     
     @staticmethod
     def get_or_create_product(product_data):
-        """
-        Get product ID, create if doesn't exist
-        
-        Args:
-            product_data: dict with product info
-            
-        Returns:
-            int: product database ID
-        """
+
         with get_db_connection() as conn:
             with conn.cursor() as cur:
-                seller_name = product_data.get('seller_name') or 'Unknow Seller'
+
+                seller_name = product_data.get('seller_name') or 'Unknown Seller'
 
                 seller_id = DatabaseManager.get_or_create_seller(
                     seller_name,
                     product_data['platform']
                 )
-                
-                # Try to get existing product
-                cur.execute("""
-                    SELECT id FROM products
-                    WHERE product_id = %s AND platform = %s
-                """, (product_data['product_id'], product_data['platform']))
-                
-                result = cur.fetchone()
-                
-                if result:
-                    # Update last_scraped
-                    cur.execute("""
-                        UPDATE products
-                        SET last_scraped = CURRENT_TIMESTAMP
-                        WHERE id = %s
-                    """, (result[0],))
-                    return result[0]
-                
-                # Create new product
+
                 cur.execute("""
                     INSERT INTO products (
-                        product_id, platform, name, url, seller_id
+                        product_id,
+                        platform,
+                        name,
+                        url,
+                        seller_id,
+                        last_scraped
                     )
-                    VALUES (%s, %s, %s, %s, %s)
+                    VALUES (%s, %s, %s, %s, %s, CURRENT_TIMESTAMP)
+                    ON CONFLICT (product_id, platform)
+                    DO UPDATE SET
+                        name = EXCLUDED.name,
+                        url = EXCLUDED.url,
+                        seller_id = EXCLUDED.seller_id,
+                        last_scraped = CURRENT_TIMESTAMP
                     RETURNING id
                 """, (
                     product_data['product_id'],
@@ -144,15 +132,16 @@ class DatabaseManager:
                     product_data['url'],
                     seller_id
                 ))
-                
+
                 product_id = cur.fetchone()[0]
-                print(f"  📦 Created new product: {product_data['name'][:50]}")
                 return product_id
+
     
     @staticmethod
     def save_price_data(product_data):
         """
         Save product price data to database
+        with validation
         
         Args:
             product_data: dict from Tiki scraper
@@ -160,10 +149,30 @@ class DatabaseManager:
         Returns:
             int: price_history ID
         """
-        # Get product ID (create if new)
+
+        # =============================
+        # 1️ VALIDATE DATA
+        # =============================
+        is_valid, error_msg = DataValidator.validate_product(product_data)
+
+        if not is_valid:
+            print(f"⚠ Validation failed: {error_msg}")
+            return None
+
+
+        # =============================
+        # 2️ CLEAN DATA
+        # =============================
+        product_data = DataValidator.clean_product_data(product_data)
+
+        # =============================
+        # 3️ GET OR CREATE PRODUCT
+        # =============================
         product_id = DatabaseManager.get_or_create_product(product_data)
-        
-        # Insert price history
+
+        # =============================
+        # 4️ INSERT PRICE HISTORY
+        # =============================
         with get_db_connection() as conn:
             with conn.cursor() as cur:
                 cur.execute("""
@@ -183,18 +192,19 @@ class DatabaseManager:
                 """, (
                     product_id,
                     product_data['price'],
-                    product_data['original_price'],
-                    product_data['discount_percent'],
-                    product_data['rating_average'],
-                    product_data['review_count'],
+                    product_data.get('original_price'),
+                    product_data.get('discount_percent'),
+                    product_data.get('rating_average'),
+                    product_data.get('review_count', 0),
                     product_data.get('quantity_sold', 0),
-                    product_data['stock_available'],
+                    product_data.get('stock_available', True),
                     product_data['scraped_at']
                 ))
                 
                 history_id = cur.fetchone()[0]
-                print(f"  ✅ Saved price: {product_data['price']:,}đ")
+                print(f"   Saved price: {product_data['price']:,}đ")
                 return history_id
+
     
     @staticmethod
     def get_latest_prices():
