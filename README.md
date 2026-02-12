@@ -55,12 +55,17 @@ This portfolio reflects an **end-to-end, system-oriented** approach to learning:
 - These are problems grounded in local context, using real data sources rather than curated datasets.
 
 ###  End-to-End Ownership
-- Not limited to isolated SQL queries or notebooks
+- Not just SQL queries or notebooks.
 
-- Projects cover the full lifecycle: **problem definition, data collection, storage, processing, deployment, and iteration
-**
-- Emphasis on clean structure, maintainability, and clarity of data flow
-
+- Projects include:
+  Data collection (Scrapy, APIs)
+  Database schema design (PostgreSQL)
+  Data validation layer
+  Historical analysis
+  Deployment
+  User feedback loops
+  
+- Clean structure. Maintainable code. Production mindset.
 ### Deployed, System-Backed Applications
 
 - Interactive applications built with Streamlit and messaging bots
@@ -156,7 +161,7 @@ An **automated price tracking system** that:
 - **Insights:** % of fake discounts uncovered
 - **Validation:** User testimonials
 
- Dataset: Original data scraped from Shopee & Tiki  
+ Dataset: Fully self-collected production data. 
  **View Project → (In Development)**
 
 ---
@@ -177,6 +182,7 @@ Hanoi residents lack **timely, actionable air quality insights**.
 - **Users:** 10–20 Hanoi residents
 - **Forecast accuracy:** 75%+  
 - **Use cases:** Exercise, commuting decisions
+- **Dataset:** Fully self-collected production data.
 
  **View Project → (Week 11 Start)**
 
@@ -207,7 +213,7 @@ Course registration at VNU is chaotic & stressful.
 
 ### Current Phase: Foundation *(Week 1–3)*  
 - **Week 1:** SQL mastery (LeetCode SQL 50)   
-- **Week 2:** Python + Database Design  ← *Current: Day 8*
+- **Week 2:** Python + Database Design  ← *Current: Day 10*
 - **Week 3:** Python advanced / buffer  
 
 ### Phase 1: Price Tracker *(Week 2–8)*  
@@ -238,7 +244,8 @@ Course registration at VNU is chaotic & stressful.
 **Completed**
 - Kaggle: Introduction to SQL *(Nov 2025)*
 - Kaggle: Advanced SQL *(Jan 2026)*
-- LeetCode SQL 50 Badge *(Feb 2026)*
+- LeetCode SQL 50 Badge *(Feb 2026)* 
+- Gemini Certified University Student *(Feb 2026)*
 
 ---
 
@@ -254,7 +261,7 @@ Course registration at VNU is chaotic & stressful.
 ### Looking For
 - Mentorship from experienced data professionals  
 - Feedback on project ideas & implementation  
-- **Internship opportunities (available from August 2026)**  
+- **Internship opportunities (available August 2026)**  
 
-📅 **Last Updated:** Febuary 11, 2026  
-📍 **Progress:** Week 2, Day 9 of 168 days
+📅 **Last Updated:** Febuary 12, 2026  
+📍 **Progress:** Week 2, Day 10 of 168 days
