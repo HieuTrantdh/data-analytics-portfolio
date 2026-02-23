@@ -43,10 +43,10 @@ def daily_scrape():
     
     # Load target products
     try:
-        with open('data/target-products.json', 'r', encoding='utf-8') as f:
+        with open('data/tiki-target-products.json', 'r', encoding='utf-8') as f:
             targets = json.load(f)
     except FileNotFoundError:
-        log_scrape("target-products.json not found", "ERROR")
+        log_scrape("tiki-target-products.json not found", "ERROR")
         return
     
     tiki_targets = [item for item in targets if item.get('platform') == 'tiki']

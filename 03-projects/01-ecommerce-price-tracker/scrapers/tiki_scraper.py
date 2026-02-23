@@ -19,7 +19,7 @@ def fetch_tiki_product(url: str):
 
     product_id = extract_product_id(url)
     if not product_id:
-        print("❌ Cannot extract product_id")
+        print(" Cannot extract product_id")
         return None
 
     api_url = f"https://tiki.vn/api/v2/products/{product_id}"
@@ -28,13 +28,11 @@ def fetch_tiki_product(url: str):
         resp = requests.get(api_url, headers=HEADERS, timeout=10)
         resp.raise_for_status()
     except requests.RequestException as e:
-        print("❌ API error:", e)
+        print(" API error:", e)
         return None
 
     data = resp.json()
 
-    # Debug 1 lần nếu cần
-    # print("DEBUG keys:", data.keys())
 
     # -------------------------
     # SAFE EXTRACTIONS

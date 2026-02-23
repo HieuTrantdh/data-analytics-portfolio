@@ -14,7 +14,7 @@ def save_products_to_db():
     Read target products and save to database
     """
     # Load target products
-    with open('data/target-products.json', 'r', encoding='utf-8') as f:
+    with open('data/tiki-target-products.json', 'r', encoding='utf-8') as f:
         targets = json.load(f)
     
     tiki_targets = [item for item in targets if item.get('platform') == 'tiki']

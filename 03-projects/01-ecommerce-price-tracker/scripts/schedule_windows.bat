@@ -1,3 +1,9 @@
 @echo off
-cd C:\Project\data-analytics-portfolio\03-projects\01-ecommerce-price-tracker
-venv\Scripts\python.exe scripts\daily_scrape.py
+cd /d C:\Project\data-analytics-portfolio\03-projects\01-ecommerce-price-tracker
+
+echo Running scraper...
+venv\Scripts\python.exe -m scripts.daily_scrape
+
+echo.
+echo Press any key to exit...
+pause
