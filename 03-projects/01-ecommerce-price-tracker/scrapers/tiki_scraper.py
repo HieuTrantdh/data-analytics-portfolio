@@ -37,8 +37,6 @@ def fetch_tiki_product(url: str):
     # -------------------------
     # SAFE EXTRACTIONS
     # -------------------------
-    seller = data.get("seller") or {}
-    seller_name = seller.get("name")
 
     price = data.get("price")
     original_price = data.get("original_price")
@@ -50,9 +48,7 @@ def fetch_tiki_product(url: str):
     if review_count == 0:
         rating_average = None
 
-   
-    quantity = data.get("quantity") or 0
-    stock_available = quantity > 0
+
 
     return {
         "platform": "tiki",
@@ -66,9 +62,7 @@ def fetch_tiki_product(url: str):
 
         "rating_average": rating_average,
         "review_count": review_count,
-
-        "seller_name": seller_name,
-        "stock_available": stock_available,
+        
 
         "scraped_at": datetime.utcnow().isoformat()
     }
