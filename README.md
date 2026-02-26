@@ -10,7 +10,7 @@ Vietnam National University, Hanoi 🇻🇳
 ##  Key Highlights
 
 - **6-Month Commitment:** Sustainable learning with real-world impact  
-  *(Current: Week 2, Day 9)*
+  *(Current: Week 2, Day 11)*
 
 - **3 Real-World Projects:** Solving real problems for users in Vietnam, with a focus on data collection, storage, and analysis
 
@@ -263,5 +263,5 @@ Course registration at VNU is chaotic & stressful.
 - Feedback on project ideas & implementation  
 - **Internship opportunities (available August 2026)**  
 
-📅 **Last Updated:** Febuary 12, 2026  
-📍 **Progress:** Week 2, Day 10 of 168 days
+📅 **Last Updated:** Febuary 26, 2026  
+📍 **Progress:** Week 2, Day 11 of 168 days
