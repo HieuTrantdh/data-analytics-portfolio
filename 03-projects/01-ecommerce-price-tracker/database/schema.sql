@@ -70,6 +70,8 @@ SELECT DISTINCT ON (p.id)
     ph.original_price,
     ph.discount_percent,
     ph.rating_average,
+    ph.lastest_prices,
+    ph.review_count,
     ph.scraped_at
 FROM products p
 JOIN price_history ph ON p.id = ph.product_id

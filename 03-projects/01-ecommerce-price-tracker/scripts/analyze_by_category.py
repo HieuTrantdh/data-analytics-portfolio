@@ -26,12 +26,23 @@ def analyze_categories():
         print("❌ Error: data/target-products.json not found")
         return
     
-    # Map product names to categories (fuzzy matching)
-    category_map = {}
+    # Map by URL first (most reliable), then by name (fuzzy fallback)
+    category_by_url = {}
+    category_by_name = {}
     for p in products_config:
-        # Use product name or URL as key
-        key = p.get('name', '').lower()
-        category_map[key] = p.get('category', 'unknown')
+        category = (p.get('category') or 'unknown').strip().lower()
+        url_key = (p.get('url') or '').strip().lower()
+        name_key = (p.get('name') or '').strip().lower()
+
+        if url_key:
+            category_by_url[url_key] = category
+        if name_key:
+            category_by_name[name_key] = category
+
+    if not any(cat != 'unknown' for cat in category_by_url.values()) and not any(
+        cat != 'unknown' for cat in category_by_name.values()
+    ):
+        print("⚠️ No category metadata found in data/target-products.json. All products may be grouped as 'unknown'.")
     
     print("\n" + "="*80)
     print("📊 CATEGORY ANALYSIS")
@@ -43,6 +54,7 @@ def analyze_categories():
             cur.execute("""
                 SELECT 
                     p.name,
+                    p.url,
                     ph.price,
                     ph.original_price,
                     ph.discount_percent,
@@ -74,22 +86,29 @@ def analyze_categories():
     for p in products_data:
         # Find category from map (fuzzy match)
         category = 'unknown'
-        product_name_lower = p['name'].lower()
-        
-        for key, cat in category_map.items():
-            if key in product_name_lower or product_name_lower in key:
-                category = cat
-                break
-        
+        product_name_lower = (p.get('name') or '').lower()
+        product_url_lower = (p.get('url') or '').lower()
+
+        # 1) Exact URL match
+        if product_url_lower in category_by_url:
+            category = category_by_url[product_url_lower]
+
+        # 2) Fuzzy name match fallback
+        if category == 'unknown':
+            for key, cat in category_by_name.items():
+                if key and (key in product_name_lower or product_name_lower in key):
+                    category = cat
+                    break
+
         if category not in categories:
             categories[category] = []
-        
+
         categories[category].append(p)
     
     # Analyze each category
     for category, items in sorted(categories.items()):
         print(f"\n{'='*80}")
-        print(f"📦 {category.upper().replace('_', ' ')}")
+        print(f" {category.upper().replace('_', ' ')}")
         print('='*80)
         
         if not items:
@@ -106,7 +125,7 @@ def analyze_categories():
         
         # Price stats
         if prices:
-            print(f"\n💰 PRICE RANGE:")
+            print(f"\n PRICE RANGE:")
             print(f"  Min:     {min(prices):>12,}đ")
             print(f"  Max:     {max(prices):>12,}đ")
             print(f"  Average: {sum(prices)/len(prices):>12,.0f}đ")
@@ -114,7 +133,7 @@ def analyze_categories():
         
         # Discount stats
         if discounts:
-            print(f"\n🔥 DISCOUNTS:")
+            print(f"\n DISCOUNTS:")
             print(f"  Products on sale:  {len(discounts)}/{len(items)} ({len(discounts)/len(items)*100:.0f}%)")
             print(f"  Average discount:  {sum(discounts)/len(discounts):>12.1f}%")
             print(f"  Max discount:      {max(discounts):>12.1f}%")
@@ -128,12 +147,12 @@ def analyze_categories():
             if savings > 0:
                 print(f"  Total savings:     {savings:>12,}đ")
         else:
-            print(f"\n🔥 DISCOUNTS:")
+            print(f"\n DISCOUNTS:")
             print(f"  No active discounts in this category")
         
         # Rating stats
         if ratings:
-            print(f"\n⭐ RATINGS:")
+            print(f"\n RATINGS:")
             print(f"  Products with ratings: {len(ratings)}/{len(items)} ({len(ratings)/len(items)*100:.0f}%)")
             print(f"  Average rating:        {sum(ratings)/len(ratings):>12.2f}/5.00")
             print(f"  Highest:               {max(ratings):>12.2f}/5.00")
@@ -141,13 +160,13 @@ def analyze_categories():
         
         # Review stats
         if reviews:
-            print(f"\n💬 REVIEWS:")
+            print(f"\n REVIEWS:")
             print(f"  Total reviews:     {sum(reviews):>12,}")
             print(f"  Average per product: {sum(reviews)/len(reviews):>10,.0f}")
             print(f"  Most reviewed:     {max(reviews):>12,}")
         
         # List products
-        print(f"\n📋 PRODUCTS:")
+        print(f"\n PRODUCTS:")
         # Sort by price descending
         sorted_items = sorted(items, key=lambda x: x['price'] if x['price'] else 0, reverse=True)
         
@@ -155,7 +174,7 @@ def analyze_categories():
             print(f"\n  {i}. {p['name'][:60]}")
             
             # Price
-            price_str = f"     💰 {p['price']:,}đ"
+            price_str = f"      {p['price']:,}đ"
             if p['discount_percent'] and p['discount_percent'] > 0:
                 price_str += f" (was {p['original_price']:,}đ, -{p['discount_percent']:.0f}%)"
             print(price_str)
@@ -163,16 +182,16 @@ def analyze_categories():
             # Rating & reviews
             info_parts = []
             if p['rating_average'] and p['rating_average'] > 0:
-                info_parts.append(f"⭐ {p['rating_average']:.1f}/5")
+                info_parts.append(f" {p['rating_average']:.1f}/5")
             if p['review_count'] and p['review_count'] > 0:
-                info_parts.append(f"💬 {p['review_count']:,} reviews")
+                info_parts.append(f" {p['review_count']:,} reviews")
             
             if info_parts:
                 print(f"     {' | '.join(info_parts)}")
     
     # Summary across all categories
     print(f"\n{'='*80}")
-    print("📊 SUMMARY ACROSS ALL CATEGORIES")
+    print(" SUMMARY ACROSS ALL CATEGORIES")
     print('='*80)
     
     print(f"\nTotal categories: {len(categories)}")
