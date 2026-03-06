@@ -22,15 +22,15 @@ def verify_tiki_data(json_file="data/all-products.json"):
         with open(json_file, encoding="utf-8") as f:
             products = json.load(f)
     except FileNotFoundError:
-        print(f"❌ File not found: {json_file}")
+        print(f" File not found: {json_file}")
         return
 
     if not isinstance(products, list):
-        print("❌ Invalid JSON format: expected a list of products")
+        print(" Invalid JSON format: expected a list of products")
         return
 
     if not products:
-        print("⚠️ No products found in file")
+        print(" No products found in file")
         return
 
     print("\n" + "=" * 70)
@@ -69,14 +69,14 @@ def verify_tiki_data(json_file="data/all-products.json"):
                 logic.append("rating missing but review_count > 0")
 
         if missing or logic:
-            print("   ⚠️ Issues:")
+            print("    Issues:")
             if missing:
                 print("     Missing:", missing)
             if logic:
                 print("     Logic:", logic)
         else:
             valid += 1
-            print("   ✅ Valid")
+            print("    Valid")
 
         print()
 

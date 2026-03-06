@@ -16,7 +16,7 @@ def show_dashboard():
     """Display dashboard summary"""
     
     print("\n" + "="*80)
-    print(f"📊 TIKI PRICE TRACKER DASHBOARD")
+    print(f" TIKI PRICE TRACKER DASHBOARD")
     print(f"Generated: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
     print("="*80)
     
@@ -35,7 +35,7 @@ def show_dashboard():
             """)
             stats = cur.fetchone()
             
-            print(f"\n📦 OVERVIEW")
+            print(f"\n OVERVIEW")
             print(f"  Products tracked:    {stats['total_products']}")
             print(f"  Price records:       {stats['total_price_records']}")
             print(f"  Tracking since:      {stats['first_scrape']}")
@@ -59,7 +59,7 @@ def show_dashboard():
             prices = cur.fetchone()
             
             if prices['min_price']:
-                print(f"\n💰 PRICING")
+                print(f"\n PRICING")
                 print(f"  Cheapest product:    {prices['min_price']:>12,}đ")
                 print(f"  Most expensive:      {prices['max_price']:>12,}đ")
                 print(f"  Average price:       {prices['avg_price']:>12,.0f}đ")
@@ -78,13 +78,13 @@ def show_dashboard():
             discounts = cur.fetchone()
             
             if discounts['products_on_sale'] and discounts['products_on_sale'] > 0:
-                print(f"\n🔥 DISCOUNTS")
+                print(f"\n DISCOUNTS")
                 print(f"  Products on sale:    {discounts['products_on_sale']}")
                 print(f"  Average discount:    {discounts['avg_discount']:>12.1f}%")
                 print(f"  Max discount:        {discounts['max_discount']:>12.1f}%")
                 print(f"  Potential savings:   {discounts['total_savings']:>12,}đ")
             else:
-                print(f"\n🔥 DISCOUNTS")
+                print(f"\n DISCOUNTS")
                 print(f"  No active discounts")
             
             # Ratings
@@ -100,7 +100,7 @@ def show_dashboard():
             ratings = cur.fetchone()
             
             if ratings['products_with_ratings'] and ratings['products_with_ratings'] > 0:
-                print(f"\n⭐ RATINGS")
+                print(f"\n RATINGS")
                 print(f"  Products with ratings: {ratings['products_with_ratings']}")
                 print(f"  Average rating:        {ratings['avg_rating']:>12.2f}/5.00")
                 print(f"  Highest:               {ratings['max_rating']:>12.2f}/5.00")
@@ -118,7 +118,7 @@ def show_dashboard():
             reviews = cur.fetchone()
             
             if reviews['total_reviews'] and reviews['total_reviews'] > 0:
-                print(f"\n💬 REVIEWS")
+                print(f"\n REVIEWS")
                 print(f"  Total reviews:       {reviews['total_reviews']:>12,}")
                 print(f"  Average per product: {reviews['avg_reviews']:>12,.0f}")
                 print(f"  Most reviewed:       {reviews['max_reviews']:>12,}")
@@ -128,7 +128,7 @@ def show_dashboard():
             changes = cur.fetchone()
             
             if changes['changes'] and changes['changes'] > 0:
-                print(f"\n📈 PRICE CHANGES")
+                print(f"\n PRICE CHANGES")
                 print(f"  Products with changes: {changes['changes']}")
                 
                 # Show recent changes
@@ -144,12 +144,12 @@ def show_dashboard():
                 if top_changes:
                     print(f"\n  Top changes:")
                     for c in top_changes:
-                        direction = "📉" if c['percent_change'] < 0 else "📈"
+                        direction = "" if c['percent_change'] < 0 else "📈"
                         print(f"    {direction} {c['name'][:45]}")
                         print(f"       {c['previous_price']:,}đ → {c['current_price']:,}đ ({c['percent_change']:+.1f}%)")
             
             # Top 5 most expensive products
-            print(f"\n💎 TOP 5 MOST EXPENSIVE")
+            print(f"\n TOP 5 MOST EXPENSIVE")
             cur.execute("""
                 SELECT name, price, discount_percent
                 FROM latest_prices
@@ -165,7 +165,7 @@ def show_dashboard():
                 print(f"     {p['price']:,}đ{discount_str}")
             
             # Top 5 best deals (highest discount)
-            print(f"\n🎯 TOP 5 BEST DEALS")
+            print(f"\n TOP 5 BEST DEALS")
             cur.execute("""
                 SELECT name, price, original_price, discount_percent
                 FROM latest_prices

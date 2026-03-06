@@ -15,7 +15,7 @@ def generate_quality_report():
     """Generate comprehensive data quality report"""
     
     print("\n" + "="*80)
-    print("📊 DATA QUALITY REPORT")
+    print(" DATA QUALITY REPORT")
     print("="*80)
     
     with get_db_connection() as conn:
@@ -71,7 +71,7 @@ def generate_quality_report():
                 print(f"Reviews:           {completeness['with_reviews']}/{total} ({completeness['with_reviews']/total*100:.1f}%)")
                 print(f"Active discounts:  {completeness['with_discount']}/{total} ({completeness['with_discount']/total*100:.1f}%)")
             else:
-                print("⚠️  No data in latest_prices view")
+                print("  No data in latest_prices view")
             
             # 3. Price ranges
             print("\n3. PRICE DISTRIBUTION")
@@ -95,7 +95,7 @@ def generate_quality_report():
                 print(f"Average:       {prices['avg_price']:>12,.0f}đ")
                 print(f"Median:        {prices['median_price']:>12,.0f}đ")
             else:
-                print("⚠️  No valid prices found")
+                print(" No valid prices found")
             
             # 4. Discount analysis
             print("\n4. DISCOUNT ANALYSIS")
@@ -119,7 +119,7 @@ def generate_quality_report():
                 print(f"Max discount:        {discounts['max_discount']:.1f}%")
                 print(f"Min discount:        {discounts['min_discount']:.1f}%")
             else:
-                print("ℹ️  No products currently on discount")
+                print("  No products currently on discount")
             
             # 5. Products with highest discounts
             print("\n5. TOP 5 DISCOUNTS")
@@ -144,7 +144,7 @@ def generate_quality_report():
                     print(f"{i}. {p['name'][:55]}")
                     print(f"   {p['original_price']:,}đ → {p['price']:,}đ (-{p['discount_percent']:.1f}%)")
             else:
-                print("ℹ️  No discounts found")
+                print("  No discounts found")
             
             # 6. Rating distribution
             print("\n6. RATING DISTRIBUTION")
@@ -168,7 +168,7 @@ def generate_quality_report():
                 print(f"Lowest rating:         {ratings['min_rating']:.2f}/5.00")
                 print(f"Highest rating:        {ratings['max_rating']:.2f}/5.00")
             else:
-                print("ℹ️  No ratings data available")
+                print("  No ratings data available")
             
             # 7. Review volume
             print("\n7. REVIEW VOLUME")
@@ -192,7 +192,7 @@ def generate_quality_report():
                 print(f"Average per product:   {reviews['avg_reviews']:,.0f}")
                 print(f"Most reviewed:         {reviews['max_reviews']:,} reviews")
             else:
-                print("ℹ️  No review data available")
+                print("  No review data available")
             
             # 8. Data quality issues
             print("\n8. POTENTIAL ISSUES")
@@ -204,43 +204,43 @@ def generate_quality_report():
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE price = 0 OR price IS NULL")
             missing_prices = cur.fetchone()['count']
             if missing_prices > 0:
-                issues.append(f"❌ {missing_prices} products with missing/zero price")
+                issues.append(f" {missing_prices} products with missing/zero price")
             
             # Check for suspicious discounts (>50%)
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE discount_percent > 50")
             high_discounts = cur.fetchone()['count']
             if high_discounts > 0:
-                issues.append(f"⚠️  {high_discounts} products with >50% discount (verify if legitimate)")
+                issues.append(f"  {high_discounts} products with >50% discount (verify if legitimate)")
             
             # Check for suspiciously high discounts (>70%)
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE discount_percent > 70")
             very_high_discounts = cur.fetchone()['count']
             if very_high_discounts > 0:
-                issues.append(f"🚨 {very_high_discounts} products with >70% discount (likely fake)")
+                issues.append(f" {very_high_discounts} products with >70% discount (likely fake)")
             
             # Check for products with no ratings
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE rating_average = 0 OR rating_average IS NULL")
             no_ratings = cur.fetchone()['count']
             if no_ratings > 0:
-                issues.append(f"ℹ️  {no_ratings} products with no ratings (might be new products)")
+                issues.append(f"ℹ  {no_ratings} products with no ratings (might be new products)")
             
             # Check for invalid rating values
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE rating_average > 5")
             invalid_ratings = cur.fetchone()['count']
             if invalid_ratings > 0:
-                issues.append(f"❌ {invalid_ratings} products with invalid rating (>5)")
+                issues.append(f" {invalid_ratings} products with invalid rating (>5)")
             
             # Check for negative prices
             cur.execute("SELECT COUNT(*) as count FROM latest_prices WHERE price < 0")
             negative_prices = cur.fetchone()['count']
             if negative_prices > 0:
-                issues.append(f"❌ {negative_prices} products with negative price (data error)")
+                issues.append(f" {negative_prices} products with negative price (data error)")
             
             if issues:
                 for issue in issues:
                     print(issue)
             else:
-                print("✅ No major issues detected")
+                print(" No major issues detected")
             
             # 9. Scraping frequency check
             print("\n9. SCRAPING FREQUENCY")
@@ -262,14 +262,14 @@ def generate_quality_report():
             stale_products = cur.fetchall()
             
             if stale_products:
-                print(f"⚠️  {len(stale_products)} products not scraped in 48+ hours:")
+                print(f"  {len(stale_products)} products not scraped in 48+ hours:")
                 for p in stale_products[:5]:  # Show first 5
                     if p['last_scraped']:
                         print(f"   • {p['name'][:50]} (last: {p['last_scraped']})")
                     else:
                         print(f"   • {p['name'][:50]} (never scraped)")
             else:
-                print("✅ All products scraped within 48 hours")
+                print(" All products scraped within 48 hours")
     
     print("\n" + "="*80)
 
